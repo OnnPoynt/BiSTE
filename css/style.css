@@ -1,13 +1,13 @@
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Anek Bangla', sans-serif;
 
     background-color: #111111;
     margin: 0;
     overflow-x: hidden;
 }
   
+/* background effects */
+
 .bg {
     position: fixed;
     top: -50%;
@@ -38,6 +38,7 @@ body {
       100% { transform: translate(5%,0) }
 }
 
+/* navbar */
 
 .container-fluid{
     padding-right: 0px;
@@ -57,9 +58,7 @@ body {
 }
 .navbar-dark .navbar-nav .nav-item-c .nav-link{
     font-size: large;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Anek Bangla', sans-serif;
     font-weight: 700;
     color: #000000;
 }
@@ -93,9 +92,7 @@ hr{
     position: absolute;
     color: #FFF;
     font-size:80px;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Anek Bangla', sans-serif;
     letter-spacing: 3px;
 
     /* font-weight: 500; */
@@ -113,39 +110,66 @@ hr{
     left: -160px;
     height: 80px;
     width: 233px;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Anek Bangla', sans-serif;
 }
+
+
+/* text-effects */
 
 .main-text{
-    font-size: 100px;
+    font-size: 140px;
     color: #FFF;
     margin: 0px;
-    top: 370px;
-    left: 1000px;
+    top: 300px;
+    left: 860px;
     padding-right: 115px;
-    line-height: 100px;
+    line-height: 130px;
     position: absolute;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Ubuntu', sans-serif;
-    transform: scale(1.3, .9);
+    font-family: 'Anek Bangla', sans-serif;
+    transform: scale(1.2, .9);
     text-align: right;
+    font-weight: 400;
+    z-index: 999;
 }
 
-/* .filter {
-    filter: url("#turb");
+.jp-text{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 18px;
+    font-weight: 400
+    letter-spacing: 0.04em;
+    color: #FFF;
     position: absolute;
-} */
-  
-svg { 
-    width: 400px;
-    height: 400px;
-    position: absolute;
-    left: 224px;
-    bottom: -111px; 
+    top: 700px;
+    right: 100px;
+    text-align: right;
+    line-height: 200%;
 }
+
+/* picture effects */
+
+.pixels-1 {
+    position: absolute;
+    height: 640px;
+    width: 500px;
+    top: 0px;
+    left: 180px;
+}
+
+.bars-1{
+    position: absolute;
+    height: 500px;
+    left: 1000px;
+    top: 208px;
+}
+.bars-2{
+    position: absolute;
+    height: 500px;
+    left: 1230px;
+    top: 128px;
+}
+
+
+/* circle effects */
 
 .bgcircle{
     background: url(https://lh3.googleusercontent.com/dvBH7TGaLsbppQT2TEtW_hulqTljZ9Ar1iCflSqFvvBGXW55ZFz-fhwHk9fhdqFsE8PVQ1rPq0c32Xj95A783Ijk4QHpJkPk4XD_EMe9v-FiPePtBAd73FfflPD4Et6kS9lks2VkHl40fjJKTeBa3vtKnvapW_RV_JtjOQQeF8vrGt3ZaIFjLZ8Cen4ozAccMX-DAJryfpjspdhaGEmeMbmrMG1XaPRBvqOLnXrSyQbi8N4u8_IOWLzJph_0_wUOEA5lk0fzUHQ1E-SOEN7CeV8fLc2yuokMAD0pUhxIpiNtNM_cPY4j3bg46LxNMiLLeOVQ_qndn00wtIEby22KoFRX9fZq56Cj9XiYViS8QiYBtxL2zTMMt96ooOzJZdf7VSUajTphl9V1EozYxbepAU36eqv2Lxf8caDV_80O5dNlSf3_cg6pZz9_qM1qT7yaVllgqPfBHwHo2ZH_BtCO_JBcyGIaDd70B5f6pC_-oSehaDTdLb4MClnZdeWTuq_IS3D7XmJdnDI3UbapJjBdbz7fbwby2lmJDshD_m-qkkGyfqaAvhdN4fJWlL_as1oGQBNcAM5PGLMCiI41oOhY_fxfXg9N-eDw7fyr8aPnXMTjVrsxjVT7jNB05ewk1XNH49OxGgghRsGHkiU2m5f7R7HPrmc_0dyimM6e7RLNwV5q4tFDFXN2eTQ6kCLlcXZJ-5wdeO1-hFo-O3cGt2QQ1HA6ImlfpISlykvWz0RG2fBq9x953z82UUbEtF-DxQyDUO5Koos4WT02IoGkAEwAlbgWFN8ldrw1shGHTcEgjc36NT87lpb5h8aMo4w5GNS4mdCJWmvjESzchLweCpJ4fODksRRju18731SgrE7bBAx2MWP3vZ2fES-2-AzCvBFYgP0sD7a1OePmaJgGsyrqFhlTolgS7hoKaGkl-o91GIjG9dE2ziYYgwozw7LCf2iTg5fEdeGeQG9MGdscqr-VbiWEr1iF34ge48Z43bI1Dk9O61VWCg=w374-h280-no?authuser=0);
@@ -153,7 +177,7 @@ svg {
     height: 250px;
     border-radius: 50%;
     background-size: cover;
-    left: 349px;
+    left: 305px;
     bottom: -86px;
     position: absolute;
 
@@ -167,4 +191,12 @@ svg textPath {
     text-transform: uppercase;
     /* letter-spacing: 20px; */
     fill: #fff;;
+}
+
+svg { 
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 180px;
+    bottom: -111px; 
 }
