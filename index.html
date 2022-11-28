@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BiSTE</title>
+    <link rel="icon" type="image/x-icon" href="image_files\favicon.ico">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100;200;300;400;500;600;700&family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/787bc2ac90.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<body>
+    <div class="bg"></div>
+
+    <!-- TITLE -->
+    <!-- <section id="title">
+
+
+    </section> -->
+
+    <header>
+        <div id="brand"><a href="/index.html"><img src="image_files\グループ 2 1.png" alt="BiSTE"></a></div>
+        <nav>
+            <ul>
+                <li><a href="aboutus.html">会社概要</a></li>
+                <li><a href="/products">事例紹介</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="aboutus.html">会社概要</a></li>
+                <li><a href="/products">Products</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <!-- lines -->
+
+    <div class="vl"> </div>
+    <!-- <hr> -->
+    <div class="left-text">
+        <span class="verticaltext_content">BiSTE</span>
+        <span class="verticaltext_content-2">株式会社ビステ</span>
+        <span class="vertical-text">
+            We are
+            <br>
+            a digital marketing company
+            <br>
+            at Shimokitazawa.
+        </span>
+
+    </div>
+    <div class="text">
+        <p class="main-text">
+            DIGITAL
+            MARKETING
+            COMPANY
+        </p>
+
+        <p class="jp-text">
+            下北沢を拠点とし
+            <br>
+            下北沢をこよなく💖する
+            <br>
+            デジタルマーケティング企業
+        </p>
+    </div>
+
+    <!-- images -->
+
+
+    <img class="pixels-1" src="image_files\animated_images\top image 1.png" alt="">
+    <img src="image_files\animated_images\画像1.png" alt="" class="bars-1">
+    <img src="image_files\animated_images\画像2.png" alt="" class="bars-2">
+
+
+    <!-- scroll animation  -->
+    <div class="circlepic"> <img class="bgcircle" src="image_files\gradiation_sample_biste.png" alt=""> </div>
+    <div id="container">
+        <div id="circle" class="blur">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                y="0px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+                <defs>
+                    <path id="circlePath" d=" M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 " />
+                </defs>
+                <circle cx="150" cy="100" r="75" fill="none" />
+                <g>
+                    <use xlink:href="#circlePath" fill="none" />
+                    <text fill="#f8f8f8">
+                        <textPath xlink:href="#circlePath">
+                            <!--FeelnJoy-->SCROLL DOWN SCROLL DOWN SCROLL DOWN SCROLL DOWN SCROLL DOWN SCROLL DOWN
+                            SCROLL DOWN SCROLL DOWN
+                        </textPath>
+                    </text>
+                </g>
+            </svg>
+        </div>
+    </div>
+
+    <script src="index.js" async defer></script>
+</body>
+
+</html>
