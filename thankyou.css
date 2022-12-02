@@ -1,0 +1,292 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #111111;
+    margin: 0;
+    overflow-x: hidden;
+    color: #FFF;
+}
+
+/* background effects */
+
+.bg {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    right: -50%;
+    bottom: -50%;
+    width: 200%;
+    height: 200vh;
+    background: transparent url("https://github.com/OnnPoynt/BiSTE/blob/main/image_files/145-100-40-monochrome.png?raw=true") repeat 0 0;
+    background-repeat: repeat;
+    animation: bg-animation .2s infinite;
+    opacity: .8;
+    visibility: visible;
+    z-index: -999;
+}
+
+@keyframes bg-animation {
+    0% {
+        transform: translate(0, 0)
+    }
+
+    10% {
+        transform: translate(-5%, -5%)
+    }
+
+    20% {
+        transform: translate(-10%, 5%)
+    }
+
+    30% {
+        transform: translate(5%, -10%)
+    }
+
+    40% {
+        transform: translate(-5%, 15%)
+    }
+
+    50% {
+        transform: translate(-10%, 5%)
+    }
+
+    60% {
+        transform: translate(15%, 0)
+    }
+
+    70% {
+        transform: translate(0, 10%)
+    }
+
+    80% {
+        transform: translate(-15%, 0)
+    }
+
+    90% {
+        transform: translate(10%, 5%)
+    }
+
+    100% {
+        transform: translate(5%, 0)
+    }
+}
+
+/* navbar */
+
+header a {
+    text-decoration: none;
+}
+
+header {
+    padding: 10px 0px 10px 6px;
+    height: 5.9171597633136095vh;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px solid rgb(94, 94, 94);
+    align-items: center;
+}
+
+#brand {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+}
+
+#brand a {
+    color: #FFF;
+}
+
+ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+ul a {
+    color: white;
+}
+
+ul li {
+    padding: 18px 85px;
+    margin-left: 10px;
+}
+
+ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+li:nth-child(3) {
+    background-image: url(https://github.com/OnnPoynt/BiSTE/blob/main/image_files/gradiation_sample_biste.png?raw=true);
+    background-size: cover;
+    overflow: hidden;
+}
+
+li:nth-child(3) a {
+    color: #111111;
+    font-weight: 500;
+    font-family: 'Anek Bangla', sans-serif;
+    letter-spacing: 0.04em;
+    font-size: 18px;
+}
+
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+
+#hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 5.9171597633136095vh);
+    width: 100%;
+}
+
+.mobile-menu li {
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    header nav {
+        display: none;
+    }
+
+    #hamburger-icon {
+        display: block;
+    }
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+
+#thankyou {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.up1 {
+    font-weight: 300;
+    font-size: 120px;
+    transform: scale(1, 0.7);
+    font-family: 'Anek Bangla', sans-serif;
+    margin-top: 100px;
+}
+
+.up2 {
+    line-height: 200%;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+.tel {
+    position: relative;
+    font-family: 'Anek Bangla', sans-serif;
+    font-size: 32px;
+    letter-spacing: 0.05em;
+}
+
+.tel span {
+    position: absolute;
+    font-size: 14px;
+    font-weight: 200;
+    color: rgb(210, 210, 210);
+    left: 43%;
+    top: 40%;
+}
+
+#footer {
+    margin-top: 30px;
+    background-color: #E1E1E1;
+    padding: 50px 0px 50px 0px;
+    z-index: 999;
+}
+
+.stuff {
+    display: flex;
+    z-index: 999;
+    padding: 0px 200px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.footerbtns {
+    color: rgb(0, 0, 0);
+    font-family: 'Anek Bangla', sans-serif;
+    float: right;
+    padding: 10px 30px 0px 30px;
+    font-size: 20px;
+}
+
+.last {
+    color: #151515;
+    font-family: 'Anek Bangla', sans-serif;
+    z-index: 999;
+    font-weight: 350;
+    transform: scale(1.35, 1);
+    padding-left: 300px;
+    opacity: 0.3;
+}
+
+button{
+    background-color: #000000;
+    padding: 72px;
+    width: 1200px;
+    margin: 201px 0px 240px 0px;
+}
+
+.topbutton a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 300;
+}
