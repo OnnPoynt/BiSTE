@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BiSTE</title>
+    <link rel="icon" type="image/x-icon" href="image_files\favicon.ico">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100;200;300;400;500;600;700&family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/787bc2ac90.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<body>
+    <div class="bg"></div>
+    <header>
+        <div id="brand"><a href="/index.html"><img src="image_files\グループ 2 1.png" alt="BiSTE"></a></div>
+        <nav>
+            <ul>
+                <li><a href="aboutus.html">会社概要</a></li>
+                <li><a href="/products">事例紹介</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- max and min height/width -->
+
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="aboutus.html">会社概要</a></li>
+                <li><a href="/products">Products</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <!-- lines -->
+
+    <div class="vl"> </div>
+    <!-- <hr> -->
+    <div class="left-text">
+        <span class="verticaltext_content">BiSTE</span>
+        <span class="verticaltext_content-2">株式会社ビステ</span>
+        <span class="vertical-text">
+            We are
+            <br>
+            a digital marketing company
+            <br>
+            at Shimokitazawa.
+        </span>
+
+    </div>
+    <div class="text">
+        <p class="main-text">
+            DIGITAL
+            <br>
+            MARKETING
+            <br>
+            COMPANY
+        </p>
+
+        <p class="jp-text">
+            下北沢を拠点とし
+            <br>
+            下北沢をこよなく💖する
+            <br>
+            デジタルマーケティング企業
+        </p>
+    </div>
+
+    <!-- images -->
+
+
+    <img class="pixels-1" src="image_files\animated_images\top image 1.png" alt="">
+    <img src="image_files\animated_images\画像1.png" alt="" class="bars-1">
+    <img src="image_files\animated_images\画像2.png" alt="" class="bars-2">
+
+
+    <!-- scroll animation  -->
+
+    <!-- media querie for 1440 and 1080p -->
+
+    <img class="bgcircle" src="image_files\gradiation_sample_bistesquare.png" alt="">
+
+    <div id="circle">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+            <defs>
+                <path id="circlePath" d=" M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 " />
+            </defs>
+            <circle cx="150" cy="100" r="75" fill="none" />
+            <g>
+                <use xlink:href="#circlePath" fill="none" />
+                <text fill="#f8f8f8">
+                    <textPath xlink:href="#circlePath">
+                        SCROLL DOWN SCROLL DOWN SCROLL DOWN SCROLL DOWN SCROLL DOWN SCROLL DOWN
+                        SCROLL DOWN SCROLL DOWN
+                    </textPath>
+                </text>
+            </g>
+        </svg>
+    </div>
+
+    <section id="first-part">
+        <div class="bgtext">
+            WHO WE ARE
+        </div>
+        <div class="part-1">
+            <div class="bistetxt">
+                BiSTE
+            </div>
+            <div class="ptext">
+                私たちは下北沢を拠点とするデジタルマーケティング企業です。
+                <br> クライアント企業の目標とする成果を第一に考え、ひたすらに追い求めます。
+                <br> 下北沢に拠点を置いているのは純粋に下北沢の文化、空気感、人が好きだからであり
+                <br> 私たちもその文化に貢献するために行動を大事にしています。
+            </div>
+        </div>
+        <div class="images-first">
+            <img src="image_files\part-1\1st.png" alt="" class="firstimgs">
+            <img src="image_files\part-1\2nd.png" alt="" class="firstimgs">
+            <img src="image_files\part-1\3rd.png" alt="" class="firstimgs">
+            <img src="image_files\part-1\4th.png" alt="" class="firstimgs">
+            <img src="image_files\part-1\5th.png" alt="" class="firstimgs">
+            <img src="image_files\part-1\6th.png" alt="" class="firstimgs">
+        </div>
+    </section>
+
+    <section id="marketing">
+        <img src="image_files\marketing\bgmarkteing.png" alt="/" class="bgimg-marketing">
+        <div class="mkt1">
+            <img src="image_files\marketing\1st.png" alt="" class="img1">
+            <div>Marketing</div>
+            <div>マーケティング支援事業</div>
+        </div>
+        <div class="mkt-2">
+            <img src="image_files\marketing\2nd.png" alt="" class="img2">
+            <div>マーケティング支援とは、<br>
+                クライアント企業そのものになること</div>
+            <div>解決策の提示後、マーケティングの実行部分まで責任を持って行います。<br>
+                よくある企業では解決策の提示後の行動が弱い場合があります。机上の空論のよう<br>
+                な解決策であってはいけません。Webマーケティングは企業によってそれぞれ適切<br>
+                な手法が異なります。１つ１つの企業にあった適切な解決策を提案し、その解決策<br>
+                を最大限のパフォーマンスを持って実行します。
+            </div>
+        </div>
+    </section>
+
+    <section id="consulting">
+        <img src="image_files\consulting\bgconsulting.png" alt="/" class="bgimg-consulting">
+        <div class="ct1">
+            <img src="image_files\consulting\cimg1.png" alt="" class="cimg1">
+            <div>Consulting</div>
+            <div>コンサルティング事業</div>
+        </div>
+        <div class="ct2">
+            <img src="image_files\consulting\cimg2.png" alt="" class="cimg2">
+
+            <div>課題の発見から解決策の提示まで<br>
+                一気通貫の並走
+            </div>
+            <div>解決策の提示後、マーケティングの実行部分まで責任を持って行います。<br>
+                よくある企業では解決策の提示後の行動が弱い場合があります。机上の空論のよう<br>
+                な解決策であってはいけません。Webマーケティングは企業によってそれぞれ適切<br>
+                な手法が異なります。１つ１つの企業にあった適切な解決策を提案し、その解決策<br>
+                を最大限のパフォーマンスを持って実行します。
+            </div>
+        </div>
+    </section>
+
+    <section id="coming-soon">
+        <img src="image_files\comingsoon\bgimgcspng.png" alt="" class="bgfinal">
+        <div class="textcs">
+            <div>事例紹介</div>
+            <div>coming soon</div>
+            <div>BiSTEでは、これまで100を超えるクライアントを支援させていただきました。<br>
+                ご支援先としては美容、サプリ、食品、学校など様々になります。本Webサイトで<br>
+                も事例紹介コンテンツを公開予定ですが、少しお待たせする形となってしまいま<br>
+                す。そのため事例を確認したい方は下記メールアドレスまでご連絡いただけますと<br>
+                幸いです。
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="alltext-contact">
+            <div class="contact-btn">
+                <a href="contact.html"><img src="image_files\circlearrow.png" alt="" class="yes"></a>
+                <h5>Contact</h5>
+                <p class="btn-under">まずはご気軽に連絡ください。</p>
+            </div>
+        </div>
+
+        <div class="background-txt">
+            TALK TO US
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="stuff">
+            <a href="index.html" class="brand"><img src="image_files\logo-large.png" alt=""></a>
+            <a href="aboutus.html" class="footerbtns">about</a>
+            <a href="contact.html" class="footerbtns">contact</a>
+            <p class="last">We are a digital marketing companyat Shimokitazawa.</p>
+        </div>
+    </section>
+
+
+    <script src="/index.js"></script>
+</body>
+
+</html>
