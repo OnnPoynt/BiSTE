@@ -56,18 +56,18 @@
     </div>
 
     <div class="formbox">
-        <form onsubmit="sendEmail(); reset(); return false;" data-netlify="true">
+        <form id="myForm" data-netlify="true">
 
-            <label for="lname">名前</label>
+            <label for="name">名前</label>
             <input type="text" id="name" name="firstname" placeholder="姓名" required>
 
-            <label for="lname">会社名</label>
-            <input type="text" id="company" name="lastname" placeholder="株式会社BiSTE">
+            <label for="company-name">会社名</label>
+            <input type="text" id="company" name="company-name" placeholder="株式会社BiSTE">
 
-            <label for="lname">メールアドレス</label>
+            <label for="email">メールアドレス</label>
             <input type="text" id="email" name="email" placeholder="info@biste.co.jp" required>
 
-            <label for="lname">電話番号</label>
+            <label for="phone">電話番号</label>
             <input type="text" id="phone" name="phone" placeholder="000-1111-222" required>
 
             <label for="subject">お問い合わせ内容</label>
@@ -77,6 +77,9 @@
 
         </form>
     </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js" async defer></script>
+    <script src="/index.js"></script>
 
 </body>
 
