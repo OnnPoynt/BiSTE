@@ -3,6 +3,7 @@ body {
     background-color: #111111;
     margin: 0;
     overflow-x: hidden;
+    font-size: 1.893491124260355vh;
     color: #FFF;
 }
 
@@ -23,7 +24,7 @@ a:active {
 }
 
 .info-1 {
-    width: 50px;
+    width: 5.9171597633136095vh;
 }
 
 /* background effects */
@@ -97,7 +98,8 @@ header a {
 }
 
 header {
-    padding: 10px 0px 10px 6px;
+    /* padding: 10px 0px 10px 6px; */
+    padding: 0.7% 0% 0.7% 0.5%;
     height: 5.9171597633136095vh;
     display: flex;
     justify-content: space-between;
@@ -128,7 +130,7 @@ ul a {
 }
 
 ul li {
-    padding: 18px 85px;
+    padding: 2.1301775147928996vh 10.059171597633137vh;
     margin-left: 10px;
 }
 
@@ -148,7 +150,7 @@ li:nth-child(3) a {
     font-weight: 500;
     font-family: 'Anek Bangla', sans-serif;
     letter-spacing: 0.04em;
-    font-size: 18px;
+    font-size: 2.1301775147928996vh;
 }
 
 #hamburger-icon {
@@ -247,7 +249,8 @@ li:nth-child(3) a {
     position: absolute;
     color: #FFF;
     top: 80%;
-    left: -56px;
+    /* left: -56px; */
+    left: -3.5%;
     font-family: 'Anek Bangla', sans-serif;
     font-size: 2vh;
     font-weight: 100;
@@ -259,10 +262,12 @@ li:nth-child(3) a {
 
 .main-text {
     font-size: 100px;
+    /* font-size: 12vh; */
     color: #FFF;
     line-height: 100%;
     right: 9%;
-    top: 364px;
+    /* top: 364px; */
+    top: 42%;
     margin: 0px;
     position: absolute;
     font-family: 'Anek Bangla', sans-serif;
@@ -273,12 +278,15 @@ li:nth-child(3) a {
 
 .jp-text {
     font-family: 'Noto Sans JP', sans-serif;
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size: 2.1301775147928996vh;
     font-weight: 400;
     color: #FFF;
     position: absolute;
-    top: 716px;
-    right: 74px;
+    /* top: 716px; */
+    top: 83.5%;
+    /* right: 74px; */
+    right: 5%;
     text-align: right;
     line-height: 200%;
 }
@@ -288,6 +296,7 @@ li:nth-child(3) a {
 .pixels-1 {
     position: absolute;
     height: 640px;
+    /* width: 35%; */
     top: 0%;
     left: 10%;
 }
@@ -295,14 +304,16 @@ li:nth-child(3) a {
 .bars-1 {
     position: absolute;
     height: 500px;
-    top: 208px;
+    /* top: 208px; */
+    top: 24%;
     right: 380px;
 }
 
 .bars-2 {
     position: absolute;
     height: 500px;
-    top: 128px;
+    /* top: 128px; */
+    top: 15%;
     right: 160px;
 }
 
@@ -364,7 +375,8 @@ li:nth-child(3) a {
 
 #first-part {
     position: relative;
-    margin-top: 1080px;
+    /* margin-top: 1080px; */
+    margin-top: 110vh;
     text-align: center;
 }
 
@@ -373,11 +385,13 @@ li:nth-child(3) a {
     position: relative;
     display: flex;
     flex-direction: column;
-    top: -310px;
+    /* top: -310px; */
+    top: -37vh;
 }
 
 .bistetxt {
-    font-size: 110px;
+    /* font-size: 110px; */
+    font-size: 13vh;
     font-family: 'Anek Bangla', sans-serif;
     z-index: 999;
     transform: scale(1.1, 0.8);
@@ -386,13 +400,15 @@ li:nth-child(3) a {
 
 .ptext {
     line-height: 242%;
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 2.38vh;
     font-weight: 500;
     letter-spacing: 0.01em;
 }
 
 .bgtext {
-    font-size: 240px;
+    /* font-size: 240px; */
+    font-size: 29vh;
     transform: scale(1, 1.8);
     font-family: 'Anek Bangla', sans-serif;
     text-align: center;
@@ -410,34 +426,41 @@ li:nth-child(3) a {
 }
 
 .firstimgs {
-    height: 566px;
+    /* height: 566px; */
+    height: 66.98224852071006vh;
 }
 
 .images-first img:nth-child(1) {
-    margin-top: -80px;
+    /* margin-top: -80px; */
+    margin-top: -6%;
 }
 
 .images-first img:nth-child(3) {
-    margin-top: -100px;
+    /* margin-top: -100px; */
+    margin-top: -7.7%;
 }
 
 .images-first img:nth-child(4) {
-    margin-top: -60px;
+    /* margin-top: -60px; */
+    margin-top: -4.6%;
 }
 
 .images-first img:nth-child(5) {
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    margin-top: 1%;
 }
 
 .images-first img:nth-child(6) {
-    margin-top: -100px;
+    /* margin-top: -100px; */
+    margin-top: -7.7%;
 }
 
 /* marketing */
 
 #marketing {
     position: relative;
-    margin-top: 200px;
+    /* margin-top: 200px; */
+    margin-top: 14%;
 }
 
 .bgimg-marketing {
@@ -453,7 +476,8 @@ li:nth-child(3) a {
 
 .mkt1 :nth-child(2) {
     position: relative;
-    font-size: 100px;
+    /* font-size: 100px; */
+    font-size: 12vh;
     font-weight: 500;
     font-family: 'Anek Bangla', sans-serif;
     letter-spacing: -0.04em;
@@ -467,12 +491,13 @@ li:nth-child(3) a {
     position: relative;
     font-weight: 500;
     line-height: 200%;
-    padding-left: 30px;
+    /* padding-left: 30px; */
+    padding-left: 2%;
     top: -50px;
 }
 
 .img1 {
-    width: 43%;
+    width: 44%;
     float: right;
 }
 
@@ -481,15 +506,18 @@ li:nth-child(3) a {
 }
 
 .img2 {
-    position: relative;
+    position: absolute;
     float: left;
-    left: 68px;
-    top: -130px;
+    /* left: 68px; */
+    left: 5%;
+    /* top: -130px; */
+    top: -45%;
     width: 40%;
 }
 
 .mkt-2 :nth-child(2) {
-    font-size: 32px;
+    /* font-size: 32px; */
+    font-size: 3.78698224852071vh;
     font-weight: 700;
     margin-left: 50%;
 }
@@ -508,7 +536,7 @@ li:nth-child(3) a {
 #consulting {
     position: relative;
     /* margin: 395px 0px; */
-    margin: 36% 0%;
+    margin: 35% 0%;
 }
 
 .bgimg-consulting {
@@ -531,7 +559,8 @@ li:nth-child(3) a {
 
 .ct1 div:nth-child(2) {
     position: relative;
-    font-size: 100px;
+    /* font-size: 100px; */
+    font-size: 12vh;
     font-weight: 500;
     font-family: 'Anek Bangla', sans-serif;
     letter-spacing: -0.04em;
@@ -550,7 +579,8 @@ li:nth-child(3) a {
 }
 
 .ct2 {
-    padding: 0px 70px 0px 120px;
+    /* padding: 0px 70px 0px 120px; */
+    padding: 0% 3.5% 0% 7.5%;
 }
 
 .cimg2 {
@@ -563,14 +593,14 @@ li:nth-child(3) a {
 
 .ct2 div:nth-child(2) {
     font-weight: 700;
-    font-size: 32px;
+    font-size: 3.78698224852071vh;
     line-height: 150%;
     margin-bottom: 20px;
 }
 
 .ct2 div:nth-child(3) {
     font-weight: 400;
-    font-size: 16px;
+    /* font-size: 16px; */
     line-height: 200%;
     opacity: 0.9;
 }
@@ -601,14 +631,14 @@ li:nth-child(3) a {
 
 .textcs div:nth-child(1) {
     font-weight: 700;
-    font-size: 56px;
+    font-size: 6.627218934911243vh;
     line-height: 110%;
     letter-spacing: 0.2em;
 }
 
 .textcs div:nth-child(2) {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 2.8402366863905324vh;
     line-height: 110%;
     transform: scale(1.2, 0.9);
     font-family: 'Anek Bangla', sans-serif;
@@ -617,7 +647,6 @@ li:nth-child(3) a {
 
 .textcs div:nth-child(3) {
     font-weight: 400;
-    font-size: 16px;
     line-height: 200%;
 }
 
@@ -628,13 +657,14 @@ li:nth-child(3) a {
 .about {
     text-align: center;
     font-weight: 300;
-    font-size: 8rem;
+    font-size: 15.14792899408284vh;
     transform: scale(1, 0.7);
     font-family: 'Anek Bangla', sans-serif;
 }
 
 #profile {
-    padding-left: 120px;
+    /* padding-left: 120px; */
+    padding-left: 8.5%;
     text-align: left;
 }
 
@@ -643,7 +673,7 @@ li:nth-child(3) a {
     margin-right: 120px;
     padding-bottom: 20px;
     font-weight: 300;
-    font-size: 2em;
+    font-size: 3.78698224852071vh;
     transform: scale(1, 0.9);
 }
 
@@ -652,7 +682,8 @@ li:nth-child(3) a {
 }
 
 .info-sub-1>div {
-    padding: 60px 300px 20px 0px;
+    /* padding: 60px 300px 20px 0px; */
+    padding: 5% 23% 1% 0%;
 }
 
 .google{
@@ -671,7 +702,7 @@ li:nth-child(3) a {
 }
 
 .mission-1 {
-    font-size: 4rem;
+    font-size: 7.57396449704142vh;
     font-weight: 400;
 }
 
@@ -680,7 +711,8 @@ li:nth-child(3) a {
     margin-right: 120px;
     padding-bottom: 20px;
     font-weight: 300;
-    font-size: 2em;
+    /* font-size: 2em; */
+    font-size: 3.78698224852071vh;
     transform: scale(1, 0.9);
     font-family: 'Anek Bangla', sans-serif;
 }
@@ -782,14 +814,14 @@ input[type=submit]:hover {
 /* contact and footer */
 
 #contact {
-    margin-top: 120px;
+    margin-top: 14.201183431952662vh;
     background-color: #E1E1E1;
-    height: 640px;
+    height: 75.7396449704142vh;
     position: relative;
 }
 
 .background-txt {
-    font-size: 200px;
+    font-size: 23.668639053254438vh;
     transform: scale(1, 2);
     font-family: 'Anek Bangla', sans-serif;
     text-align: center;
@@ -797,7 +829,7 @@ input[type=submit]:hover {
     opacity: 4%;
     font-weight: 300;
     z-index: -99;
-    padding-top: 90px;
+    padding-top: 10.650887573964496vh;
 }
 
 .contact-btn {
@@ -809,7 +841,7 @@ input[type=submit]:hover {
 
 h5 {
     color: #111111;
-    font-size: 120px;
+    font-size: 14.201183431952662vh;
     transform: scale(1, 0.8);
     font-weight: 500;
     font-family: 'Anek Bangla', sans-serif;
@@ -820,6 +852,7 @@ h5 {
     float: right;
     position: absolute;
     left: 120%;
+    height: 75%;
     top: 20%;
 }
 
@@ -835,13 +868,16 @@ h5 {
 
 #footer {
     background-color: #151515;
-    padding: 130px 0px 50px 0px;
+    /* padding: 130px 0px 50px 0px; */
+    padding: 9% 0% 6% 0%;
     z-index: 999;
 }
 
+
 .stuff {
     z-index: 999;
-    padding: 0px 200px;
+    /* padding: 0px 200px; */
+    padding: 0% 11.5%;
     font-weight: 400;
     margin-top: 30px;
 }
@@ -851,7 +887,7 @@ h5 {
     font-family: 'Anek Bangla', sans-serif;
     float: right;
     padding: 10px 30px 0px 30px;
-    font-size: 20px;
+    /* font-size: 20px; */
 }
 
 .last {
@@ -864,4 +900,101 @@ h5 {
     transform: scale(1.35, 1);
     margin-right: 16.5%;
     padding-top: 20px;
+}
+
+
+
+
+
+
+@media screen and (min-width: 1920px) {
+
+    .main-text {
+        font-size: 12vh;
+    }
+
+    .pixels-1{
+        width: 35%;
+        height: auto;
+    }
+
+    .bars-1{
+        width: 12.7%;
+        height: auto;
+        right: 26.65%;
+    }
+
+    .bars-2{
+        width: 12.7%;
+        height: auto;
+        right: 11.25%;
+    }
+
+
+    .vl {
+        border-left: 1px solid rgb(94, 94, 94);
+        height: 100%;
+        position: absolute;
+        left: 5%;
+        top: 0;
+    }
+
+    .bgcircle {
+        border-radius: 50%;
+        background-size: cover;
+        left: 20%;
+        /* top: 943px; */
+        top: 87%;
+        overflow: hidden;
+        position: absolute;
+        /* width: 315px; */
+        width: 16%;
+    }
+
+    #circle svg {
+        position: absolute;
+        /* width: 884px; */
+        width: 46%;
+        /* left: 95px; */
+        left: 4.9%;
+        /* top: 655px; */
+        top: 60.6%;
+    
+        -webkit-animation-name: rotate;
+    
+        animation-name: rotate;
+    
+        animation-duration: 10s;
+    
+        -o-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+    
+        animation-timing-function: linear;
+    }
+    
+
+}
+
+
+
+@media screen and (min-width: 3000px) {
+
+
+    .cimg2 {
+        float: right;
+        position: relative;
+        top: -240px;
+        width: 46%;
+    }
+    
+    .brand img{
+        height: 100px;
+    }
+
+    
+    #brand a img{
+        height: 80px;
+    }
+    
+
 }
