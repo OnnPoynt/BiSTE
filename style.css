@@ -696,7 +696,8 @@ li:nth-child(3) a {
 /* mission */
 
 #mission {
-    padding-left: 120px;
+    /* padding-left: 120px; */
+    padding-left: 8.5%;
     text-align: left;
     margin-top: 90px;
 }
@@ -719,13 +720,14 @@ li:nth-child(3) a {
 
 .mission-info-1 {
     font-weight: 100;
-    line-height: 30px;
+    line-height: 3.5502958579881656vh;
 }
 
 /* STANCE */
 
 #stance {
-    padding-left: 120px;
+    /* padding-left: 120px; */
+    padding-left: 8.5%;
     text-align: left;
     margin-top: 90px;
 }
@@ -739,15 +741,16 @@ li:nth-child(3) a {
 
 .uptxt {
     position: relative;
-    margin: 0px 0px 0px 120px;
+    margin: 0px 0px 0px 8.4%;
 }
 
 .contact {
     font-weight: 300;
-    font-size: 11rem;
+    font-size: 20.828402366863905vh;
     transform: scale(1, 0.7);
     font-family: 'Anek Bangla', sans-serif;
-    margin: 0px 0px -60px 0px;
+    /* margin: 0px 0px -60px 0px; */
+    margin: 0px 0px -5% 0px;
 }
 
 .under-txt {
@@ -758,13 +761,13 @@ li:nth-child(3) a {
 .tel {
     position: relative;
     font-family: 'Anek Bangla', sans-serif;
-    font-size: 24px;
+    font-size: 2.8402366863905324vh;
     letter-spacing: 0.05em;
 }
 
 .tel span {
     position: absolute;
-    font-size: 14px;
+    font-size: 1.6568047337278107vh;
     font-weight: 200;
     color: rgb(210, 210, 210);
     bottom: 40%;
@@ -773,20 +776,22 @@ li:nth-child(3) a {
 /* form */
 
 .formbox {
-    padding: 0px 120px;
+    padding: 0px 8.4%;
 }
 
 
 input[type=text],
 select,
 textarea {
+    font-size: 1.893491124260355vh;
     background: transparent;
     width: 100%;
-    padding: 12px;
-    border: 1px solid rgb(137, 137, 137);
+    padding: 1.4201183431952662vh;
+    border: 2px solid rgb(137, 137, 137);
     border-radius: 1px;
     box-sizing: border-box;
-    margin: 15px 0px 55px 0px;
+    /* margin: 15px 0px 55px 0px; */
+    margin: 1.5% 0 4.5% 0;
     resize: none;
     color: #FFF;
 }
@@ -794,9 +799,11 @@ textarea {
 /* Style the submit button with a specific background color etc */
 
 input[type=submit] {
+    font-size: 1.893491124260355vh;
     background-color: #000000;
     color: white;
-    padding: 60px 20px;
+    /* padding: 60px 20px; */
+    padding: 5% 1%;
     border: none;
     cursor: pointer;
     width: 100%;
@@ -807,7 +814,7 @@ input[type=submit]:hover {
 }
 
 .submitbutton {
-    margin: 50px 0px;
+    margin: 4% 0px;
 }
 
 
@@ -977,6 +984,7 @@ h5 {
 
 
 
+
 @media screen and (min-width: 3000px) {
 
 
@@ -996,5 +1004,6 @@ h5 {
         height: 80px;
     }
     
+
 
 }
