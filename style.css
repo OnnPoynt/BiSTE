@@ -807,6 +807,7 @@ input[type=submit] {
     border: none;
     cursor: pointer;
     width: 100%;
+    margin-bottom: 20%;
 }
 
 input[type=submit]:hover {
