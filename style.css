@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wdth,wght@75,200;125,200;125,400;125,500&display=swap');
+
 body {
     font-family: 'Noto Sans JP', sans-serif;
     background-color: #111111;
@@ -5,6 +7,7 @@ body {
     overflow-x: hidden;
     font-size: 1.893491124260355vh;
     color: #FFF;
+    font-stretch: expanded;
 }
 
 a:link {
@@ -37,7 +40,7 @@ a:active {
     bottom: -50%;
     width: 200%;
     height: 200vh;
-    background: transparent url("https://github.com/OnnPoynt/BiSTE/blob/main/image_files/145-100-40-monochrome.png?raw=true") repeat 0 0;
+    background: transparent url("https://github.com/OnnPoynt/BiSTE/blob/main/image_files/100-90-10-monochrome.png?raw=true") repeat 0 0;
     background-repeat: repeat;
     animation: bg-animation .2s infinite;
     opacity: .8;
@@ -130,19 +133,27 @@ ul a {
 }
 
 ul li {
-    padding: 2.1301775147928996vh 10.059171597633137vh;
+    padding: 19px 63px 19px 19px;
     margin-left: 10px;
+    font-size: 16px;
 }
 
-ul li:hover {
+li:nth-child(2) {
+    padding-right: 85px;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: line-through;
+}
+
+/* ul li:hover {
     transform: scale(1.1);
     transition: 0.3s;
-}
+} */
 
 li:nth-child(3) {
     background-image: url(https://github.com/OnnPoynt/BiSTE/blob/main/image_files/gradiation_sample_biste.png?raw=true);
     background-size: cover;
     overflow: hidden;
+    padding: 19px 73px;
 }
 
 li:nth-child(3) a {
@@ -223,38 +234,39 @@ li:nth-child(3) a {
 }
 
 .verticaltext_content {
-    transform: rotate(270deg) scale(1, .8);
-    top: 24%;
-    left: -1.4%;
+    transform: rotate(270deg);
+    top: 180px;
+    left: -16px;
     position: absolute;
     color: #FFF;
-    font-size: 10.3vh;
+    font-size: 60px;
     font-family: 'Anek Bangla', sans-serif;
 }
 
 .verticaltext_content-2 {
     color: #FFF;
     position: absolute;
-    top: 38%;
-    left: 3.3%;
+    top: 280px;
+    left: 46px;
     writing-mode: vertical-rl;
     font-family: 'Noto Sans JP', sans-serif;
     transform: scale(1, .35);
-    font-size: 5vh;
+    font-size: 44px;
 }
 
 .vertical-text {
-    transform: rotate(270deg) scale(1, .8);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    transform: rotate(270deg);
     position: absolute;
     color: #FFF;
     top: 80%;
-    /* left: -56px; */
-    left: -3.5%;
+    left: -56px;
     font-family: 'Anek Bangla', sans-serif;
-    font-size: 2vh;
-    font-weight: 100;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.04em;
     line-height: 1.2;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 
@@ -262,33 +274,31 @@ li:nth-child(3) a {
 
 .main-text {
     font-size: 100px;
-    /* font-size: 12vh; */
     color: #FFF;
     line-height: 100%;
-    right: 9%;
-    /* top: 364px; */
+    right: 44px;
     top: 42%;
     margin: 0px;
     position: absolute;
     font-family: 'Anek Bangla', sans-serif;
-    transform: scale(1.3, 1);
+    font-weight: 500;
     text-align: right;
     z-index: 999;
 }
 
 .jp-text {
     font-family: 'Noto Sans JP', sans-serif;
-    /* font-size: 18px; */
-    font-size: 2.1301775147928996vh;
     font-weight: 400;
-    color: #FFF;
+    font-size: 18px;
+    /* font-size: 2.1301775147928996vh; */
     position: absolute;
-    /* top: 716px; */
-    top: 83.5%;
-    /* right: 74px; */
-    right: 5%;
+    top: 716px;
+    /* top: 83.5%; */
+    right: 74px;
+    /* right: 5%; */
     text-align: right;
     line-height: 200%;
+    letter-spacing: 0.04em;
 }
 
 /* picture effects */
@@ -375,26 +385,34 @@ li:nth-child(3) a {
 
 #first-part {
     position: relative;
-    /* margin-top: 1080px; */
-    margin-top: 110vh;
+    margin-top: 760px;
     text-align: center;
 }
 
+.bgtext {
+    font-size: 400px;
+    /* font-size: 29vh; */
+    /* transform: scale(1, 1.8); */
+    font-family: 'Anek Bangla', sans-serif;
+    font-stretch: condensed;
+    text-align: center;
+    opacity: 4%;
+    font-weight: 300;
+    z-index: -99;
+    padding-top: 90px;
+}
 
 .part-1 {
     position: relative;
     display: flex;
     flex-direction: column;
-    /* top: -310px; */
-    top: -37vh;
+    top: -480px;
 }
 
 .bistetxt {
-    /* font-size: 110px; */
-    font-size: 13vh;
+    font-size: 100px;
     font-family: 'Anek Bangla', sans-serif;
     z-index: 999;
-    transform: scale(1.1, 0.8);
     font-weight: 500;
 }
 
@@ -406,23 +424,11 @@ li:nth-child(3) a {
     letter-spacing: 0.01em;
 }
 
-.bgtext {
-    /* font-size: 240px; */
-    font-size: 29vh;
-    transform: scale(1, 1.8);
-    font-family: 'Anek Bangla', sans-serif;
-    text-align: center;
-    opacity: 4%;
-    font-weight: 300;
-    z-index: -99;
-    padding-top: 90px;
-}
-
 .images-first {
     display: flex;
     justify-content: space-evenly;
     padding: 0px 60px 80px 60px;
-    margin-top: -100px;
+    margin-top: -270px;
 }
 
 .firstimgs {
@@ -470,20 +476,19 @@ li:nth-child(3) a {
 }
 
 .mkt1 {
-    /* padding: 130px 70px 120px 77px; */
-    padding: 9% 5% 8.5% 6%;
+    padding: 134px 120px 149px 120px;
+    /* padding: 9% 5% 8.5% 6%; */
 }
 
 .mkt1 :nth-child(2) {
     position: relative;
-    /* font-size: 100px; */
-    font-size: 12vh;
+    font-size: 100px;
+    /* font-size: 12vh; */
     font-weight: 500;
     font-family: 'Anek Bangla', sans-serif;
     letter-spacing: -0.04em;
-    transform: scale(1.3, 1);
     text-align: left;
-    left: 16.5%;
+    /* left: 16.5%; */
     top: -20px;
 }
 
@@ -497,7 +502,7 @@ li:nth-child(3) a {
 }
 
 .img1 {
-    width: 44%;
+    width: 480px;
     float: right;
 }
 
@@ -686,7 +691,7 @@ li:nth-child(3) a {
     padding: 5% 23% 1% 0%;
 }
 
-.google{
+.google {
     color: rgb(197, 197, 197);
     font-family: 'Anek Bangla', sans-serif;
     font-weight: 100;
@@ -915,29 +920,30 @@ h5 {
 
 
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1800px) {
 
     .main-text {
         font-size: 12vh;
+        right: 245px;
     }
 
-    .pixels-1{
-        width: 35%;
-        height: auto;
+    .pixels-1 {
+        left: 230px;
+        height: 735px;
+        /* height: auto; */
     }
 
-    .bars-1{
-        width: 12.7%;
+    .bars-1 {
+        width: 210px;
         height: auto;
         right: 26.65%;
     }
 
-    .bars-2{
-        width: 12.7%;
+    .bars-2 {
+        width: 210px;
         height: auto;
         right: 11.25%;
     }
-
 
     .vl {
         border-left: 1px solid rgb(94, 94, 94);
@@ -967,19 +973,19 @@ h5 {
         left: 4.9%;
         /* top: 655px; */
         top: 60.6%;
-    
+
         -webkit-animation-name: rotate;
-    
+
         animation-name: rotate;
-    
+
         animation-duration: 10s;
-    
+
         -o-animation-iteration-count: infinite;
         animation-iteration-count: infinite;
-    
+
         animation-timing-function: linear;
     }
-    
+
 
 }
 
@@ -995,16 +1001,16 @@ h5 {
         top: -240px;
         width: 46%;
     }
-    
-    .brand img{
+
+    .brand img {
         height: 100px;
     }
 
-    
-    #brand a img{
+
+    #brand a img {
         height: 80px;
     }
-    
+
 
 
 }
