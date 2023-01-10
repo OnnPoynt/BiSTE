@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wdth,wght@75,200;125,200;125,400;125,500&family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wdth,wght@75,200;100,200;125,200;125,300;125,400;125,500&family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap');
 
 body {
     font-family: 'Noto Sans JP', sans-serif;
     background-color: #111111;
     margin: 0;
     overflow-x: hidden;
-    font-size: 1.893491124260355vh;
+    font-size: 1.3888888888888888vw;
     color: #FFF;
     font-stretch: expanded;
 }
@@ -135,7 +135,7 @@ ul a {
 ul li {
     padding: 19px 63px 19px 19px;
     margin-left: 10px;
-    font-size: 16px;
+    font-size: 1.1111111111111112vw;
 }
 
 li:nth-child(2) {
@@ -239,7 +239,8 @@ li:nth-child(3) a {
     left: -16px;
     position: absolute;
     color: #FFF;
-    font-size: 60px;
+    /* font-size: 60px; */
+    font-size: 4.166666666666667vw;
     font-family: 'Anek Bangla', sans-serif;
 }
 
@@ -251,7 +252,8 @@ li:nth-child(3) a {
     writing-mode: vertical-rl;
     font-family: 'Noto Sans JP', sans-serif;
     transform: scale(1, .35);
-    font-size: 44px;
+    /* font-size: 44px; */
+    font-size: 3.0555555555555554vw;
 }
 
 .vertical-text {
@@ -263,7 +265,8 @@ li:nth-child(3) a {
     font-family: 'Anek Bangla', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
+    /* font-size: 12px; */
+    font-size: 0.8333333333333334vw;
     letter-spacing: 0.04em;
     line-height: 1.2;
     color: rgba(255, 255, 255, 0.5);
@@ -273,7 +276,8 @@ li:nth-child(3) a {
 /* text-effects */
 
 .main-text {
-    font-size: 100px;
+    /* font-size: 100px; */
+    font-size: 6.944444444444445vw;
     color: #FFF;
     line-height: 100%;
     right: 44px;
@@ -289,8 +293,8 @@ li:nth-child(3) a {
 .jp-text {
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 400;
-    font-size: 18px;
-    /* font-size: 2.1301775147928996vh; */
+    /* font-size: 18px; */
+    font-size: 1.25vw;
     position: absolute;
     top: 716px;
     /* top: 83.5%; */
@@ -305,7 +309,8 @@ li:nth-child(3) a {
 
 .pixels-1 {
     position: absolute;
-    height: 640px;
+    /* height: 640px; */
+    width: 34.72222222222222vw;
     /* width: 35%; */
     top: 0%;
     left: 10%;
@@ -313,7 +318,8 @@ li:nth-child(3) a {
 
 .bars-1 {
     position: absolute;
-    height: 500px;
+    /* height: 500px; */
+    width: 12.5vw;
     /* top: 208px; */
     top: 24%;
     right: 380px;
@@ -321,7 +327,8 @@ li:nth-child(3) a {
 
 .bars-2 {
     position: absolute;
-    height: 500px;
+    /* height: 500px; */
+    width: 12.5vw;
     /* top: 128px; */
     top: 15%;
     right: 160px;
@@ -390,7 +397,8 @@ li:nth-child(3) a {
 }
 
 .bgtext {
-    font-size: 400px;
+    /* font-size: 400px; */
+    font-size: 27.77777777777778vw;
     /* font-size: 29vh; */
     /* transform: scale(1, 1.8); */
     font-family: 'Anek Bangla', sans-serif;
@@ -410,7 +418,8 @@ li:nth-child(3) a {
 }
 
 .bistetxt {
-    font-size: 100px;
+    /* font-size: 100px; */
+    font-size: 6.944444444444445vw;
     font-family: 'Anek Bangla', sans-serif;
     z-index: 999;
     font-weight: 500;
@@ -419,7 +428,7 @@ li:nth-child(3) a {
 .ptext {
     line-height: 242%;
     /* font-size: 20px; */
-    font-size: 2.38vh;
+    font-size: 1.3888888888888888vw;
     font-weight: 500;
     letter-spacing: 0.01em;
 }
@@ -482,8 +491,8 @@ li:nth-child(3) a {
 
 .mkt1 :nth-child(2) {
     position: relative;
-    font-size: 100px;
-    /* font-size: 12vh; */
+    /* font-size: 100px; */
+    font-size: 6.944444444444445vw;
     font-weight: 500;
     font-family: 'Anek Bangla', sans-serif;
     letter-spacing: -0.04em;
@@ -521,7 +530,8 @@ li:nth-child(3) a {
 }
 
 .mkt-2 :nth-child(2) {
-    font-size: 32px;
+    /* font-size: 32px; */
+    font-size: 2.2222222222222223vw;
     font-weight: 700;
     margin-left: 50%;
 }
@@ -563,8 +573,8 @@ li:nth-child(3) a {
 
 .ct1 div:nth-child(2) {
     position: relative;
-    font-size: 100px;
-    /* font-size: 12vh; */
+    /* font-size: 100px; */
+    font-size: 6.944444444444445vw;
     font-weight: 500;
     font-family: 'Anek Bangla', sans-serif;
     letter-spacing: -0.04em;
@@ -662,8 +672,8 @@ li:nth-child(3) a {
 .about {
     text-align: center;
     font-weight: 300;
-    font-size: 15.14792899408284vh;
-    /* transform: scale(1, 0.7); */
+    font-size: 6.944444444444445vw;
+    /* font-size: 100px; */
     font-family: 'Anek Bangla', sans-serif;
 }
 
@@ -677,18 +687,27 @@ li:nth-child(3) a {
     border-bottom: 0.5px solid rgb(94, 94, 94);
     margin-right: 120px;
     padding-bottom: 20px;
-    font-weight: 300;
-    font-size: 3.78698224852071vh;
-    /* transform: scale(1, 0.9); */
+    /* font-weight: 300; */
+    font-size: 2.2222222222222223vw;
+    font-weight: 500;
+    /* font-size: 32px; */
+    line-height: 150%;
+
 }
 
 .info-sub-1 {
     display: flex;
+    font-weight: 400;
+    opacity: 0.7;
 }
 
 .info-sub-1>div {
     /* padding: 60px 300px 20px 0px; */
     padding: 5% 23% 1% 0%;
+}
+
+.info-1 {
+    width: 10%;
 }
 
 .google {
@@ -719,7 +738,6 @@ li:nth-child(3) a {
     font-weight: 300;
     /* font-size: 2em; */
     font-size: 3.78698224852071vh;
-    /* transform: scale(1, 0.9); */
     font-family: 'Anek Bangla', sans-serif;
 }
 
@@ -734,7 +752,7 @@ li:nth-child(3) a {
     /* padding-left: 120px; */
     padding-left: 8.5%;
     text-align: left;
-    margin-top: 90px;
+    margin: 90px 0px 240px 0px;
 }
 
 
@@ -751,31 +769,38 @@ li:nth-child(3) a {
 
 .contact {
     font-weight: 300;
-    font-size: 20.828402366863905vh;
-    /* transform: scale(1, 0.7); */
+    font-size: 6.944444444444445vw;
     font-family: 'Anek Bangla', sans-serif;
-    /* margin: 0px 0px -60px 0px; */
-    margin: 0px 0px -5% 0px;
+    margin: 100px 0px 0px 0px;
 }
 
 .under-txt {
     margin: 0px;
     font-weight: 300;
+    font-size: 1.1111111111111112vw;
+    line-height: 170%;
+    letter-spacing: 0.05em;
 }
 
 .tel {
     position: relative;
     font-family: 'Anek Bangla', sans-serif;
     font-size: 2.8402366863905324vh;
+    font-weight: 300;
+    font-stretch: normal;
     letter-spacing: 0.05em;
+    margin-bottom: 100px;
 }
 
 .tel span {
     position: absolute;
-    font-size: 1.6568047337278107vh;
+    font-size: 0.9722222222222222vw;
     font-weight: 200;
+    font-stretch: normal;
+    line-height: 100%;
     color: rgb(210, 210, 210);
-    bottom: 40%;
+    opacity: 0.5;
+    top: 45%;
 }
 
 /* form */
@@ -784,6 +809,10 @@ li:nth-child(3) a {
     padding: 0px 8.4%;
 }
 
+label{
+    letter-spacing: 0.05em;
+    font-weight: 400;
+}
 
 input[type=text],
 select,
@@ -792,7 +821,7 @@ textarea {
     background: transparent;
     width: 100%;
     padding: 1.4201183431952662vh;
-    border: 2px solid rgb(137, 137, 137);
+    border: 1px solid rgba(137, 137, 137, 0.3);
     border-radius: 1px;
     box-sizing: border-box;
     /* margin: 15px 0px 55px 0px; */
@@ -812,15 +841,11 @@ input[type=submit] {
     border: none;
     cursor: pointer;
     width: 100%;
-    margin-bottom: 20%;
+    margin: 20% 0%;
 }
 
 input[type=submit]:hover {
     background-color: #0e0e0e;
-}
-
-.submitbutton {
-    margin: 4% 0px;
 }
 
 
@@ -930,16 +955,10 @@ h5 {
 
     .main-text {
         font-size: 12vh;
-        right: 245px;
+        /* right: 245px; */
     }
 
-    .pixels-1 {
-        left: 230px;
-        height: 735px;
-        /* height: auto; */
-    }
-
-    .bars-1 {
+    /* .bars-1 {
         width: 210px;
         height: auto;
         right: 26.65%;
@@ -949,7 +968,7 @@ h5 {
         width: 210px;
         height: auto;
         right: 11.25%;
-    }
+    } */
 
     .vl {
         border-left: 1px solid rgb(94, 94, 94);
