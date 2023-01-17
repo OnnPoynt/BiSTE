@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wdth,wght@75,200;100,200;125,200;125,300;125,400;125,500&family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap');
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Noto Sans JP', sans-serif;
     background-color: #111111;
@@ -75,11 +79,11 @@ body {
     }
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
     .line {
         top: 30%;
     }
-}
+} */
 
 /* .info-1 {
     width: 5.9171597633136095vh;
@@ -101,6 +105,7 @@ body {
     opacity: .8;
     visibility: visible;
     z-index: -999;
+    overflow: hidden;
 }
 
 @keyframes bg-animation {
@@ -259,6 +264,8 @@ li:nth-child(3) a {
     justify-content: flex-start;
     padding: 0;
     margin: 0;
+    background-color: #151515;
+    z-index: 999;
 }
 
 .mobile-menu {
@@ -268,34 +275,43 @@ li:nth-child(3) a {
     left: 0;
     height: calc(100vh - 5.9171597633136095vh);
     width: 100%;
+    background-color: #151515;
 }
 
 .mobile-menu li {
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
+    padding: 0;
     font-size: 10vw;
     text-decoration: none;
     z-index: 999;
     font-stretch: expanded;
     font-family: 'Anek Bangla', sans-serif;
     text-decoration: underline 0.5px;
+    margin-top: 16.666666666666668vh;
+}
+
+.mobile-menu .marginnashi {
+    margin: 0;
 }
 
 .menutxt {
     border-top: 0.5px solid rgb(94, 94, 94);
-    font-size: 16px;
+    font-size: 4.375vw;
     line-height: 170%;
     position: absolute;
     bottom: 5%;
     margin: 0px;
-    padding-left: 5%;
+    padding: 5%;
+}
+
+.pchild {
+    margin-top: 0;
 }
 
 .pchild-1 {
     font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 300;
+    font-weight: 100;
     opacity: 0.8;
-    margin: 0;
-    /* font-size: 14px; */
 }
 
 .pchild-2 {
@@ -313,6 +329,10 @@ li:nth-child(3) a {
 
     #hamburger-icon {
         display: block;
+    }
+
+    .bg {
+        height: 390vh;
     }
 }
 
@@ -388,14 +408,35 @@ li:nth-child(3) a {
     color: rgba(255, 255, 255, 0.5);
 }
 
+.vla{
+    display: none;
+}
+
+.vlc{
+    display: none;
+}
+
 @media only screen and (max-width: 600px) {
     .vl {
         left: 10%;
         opacity: 0.4;
     }
 
+    .vla {
+        display: block;
+        left: 10%;
+        opacity: 0.4;
+    }
+
+    .vlc {
+        display: block;
+        left: 10%;
+        opacity: 0.4;
+    }
+
+
     .verticaltext_content {
-        top: 84px;
+        top: 14vh;
         left: -2.5vw;
         position: absolute;
         color: #FFF;
@@ -405,7 +446,7 @@ li:nth-child(3) a {
     .verticaltext_content-2 {
         color: #FFF;
         position: absolute;
-        top: 23.818181818181817vh;
+        top: 21.818181818181817vh;
         font-weight: 300;
         left: 5.9vw;
         writing-mode: vertical-rl;
@@ -436,7 +477,7 @@ li:nth-child(3) a {
     font-family: 'Anek Bangla', sans-serif;
     font-weight: 500;
     text-align: right;
-    z-index: 999;
+    z-index: 900;
 }
 
 .jp-text {
@@ -464,7 +505,14 @@ li:nth-child(3) a {
     .main-text {
         font-size: 11.25vw;
         top: 57.57142857142857vh;
-        top: 403px;
+        top: 121.875vw;
+    }
+
+    .jp-text {
+        font-size: 4.375vw;
+        top: 157vw;
+        letter-spacing: 0.01em;
+        font-weight: 100;
     }
 }
 
@@ -499,6 +547,14 @@ li:nth-child(3) a {
     right: 11.11111111111111vw;
 }
 
+.bars-3 {
+    display: none;
+}
+
+.bars-4 {
+    display: none;
+}
+
 @media only screen and (max-width: 600px) {
     .pixels-1 {
         width: 77.5vw;
@@ -508,12 +564,7 @@ li:nth-child(3) a {
     }
 
     .bars-1 {
-        position: absolute;
-        height: 304px;
-        width: 88px;
-        padding-bottom: 1000px;
-        top: 727px;
-        left: 16px;
+        display: none;
     }
 
     .bars-2 {
@@ -521,12 +572,21 @@ li:nth-child(3) a {
     }
 
     .bars-3 {
+        display: block;
         position: absolute;
-        height: 304px;
-        width: 88px;
-        padding-bottom: 1000px;
-        top: 807px;
-        left: 116px;
+        /* height: 304px; */
+        width: 27.5vw;
+        top: 238.16666666666667vw;
+        left: 5vw;
+    }
+
+    .bars-4 {
+        display: block;
+        position: absolute;
+        /* height: 304px; */
+        width: 27.5vw;
+        top: 255.5vw;
+        left: 36.25vw;
     }
 
 }
@@ -574,16 +634,6 @@ li:nth-child(3) a {
 
 /* circle effects */
 
-#circle {
-    width: 100%;
-    overflow: hidden;
-}
-
-#circle text {
-    font-family: 'Anek Bangla', sans-serif;
-    font-size: 7.65px;
-}
-
 .bgcircle {
     border-radius: 50%;
     background-size: cover;
@@ -596,6 +646,15 @@ li:nth-child(3) a {
     width: 16%;
 }
 
+#circle {
+    width: 100%;
+    overflow: hidden;
+}
+
+#circle text {
+    font-family: 'Anek Bangla', sans-serif;
+    font-size: 7.65px;
+}
 
 #circle svg {
     position: absolute;
@@ -629,7 +688,7 @@ li:nth-child(3) a {
     }
 }
 
-@media (max-aspect-ratio: 18/11) {
+@media (min-aspect-ratio: 18/11) {
     .bgcircle {
         top: 84.6590909090909vh;
     }
@@ -639,7 +698,7 @@ li:nth-child(3) a {
 @media (min-aspect-ratio: 640/323) {
     .bgcircle {
         left: 18%;
-        top: 85%;
+        top: 85.5%;
     }
 
     #circle svg {
@@ -654,29 +713,33 @@ li:nth-child(3) a {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 350px) {
     .circleimg {
         overflow: hidden;
-        top: 650px;
+        top: 79.5vh;
         /* left: 195px; */
         position: relative;
         /* width: 150px; */
+        height: 544px;
     }
 
     .bgcircle {
         border-radius: 50%;
+        width: 57.8125vw;
         width: 185px;
         position: relative;
         /* top: 672px; */
-        left: 195px;
-        left: 56%;
+        top: 179px;
+        left: 179px;
+        /* left: 55.9375vw; */
     }
 
     #circle {
         width: 100%;
         overflow: hidden;
-        position: relative;
-        top: 285px;
+        position: absolute;
+        top: 86.5vh;
+        /* top: 273px; */
     }
 
     #circle text {
@@ -685,35 +748,105 @@ li:nth-child(3) a {
     }
 
     #circle svg {
-        width: 538px;
-        left: 28px;
-        top: 504px;
-
-        -webkit-animation-name: rotate;
-
-        animation-name: rotate;
-
-        animation-duration: 10s;
-
-        -o-animation-iteration-count: infinite;
-        animation-iteration-count: infinite;
-
-        animation-timing-function: linear;
+        position: relative;
+        width: 169.0625vw;
+        width: 540px;
+        left: 0px;
+        /* top: 504px; */
     }
-
-
-    @keyframes rotate {
-        from {
-            transform: rotate(0deg);
-        }
-
-        to {
-            transform: rotate(360deg);
-
-        }
-    }
-
 }
+
+@media only screen and (min-width: 350px) and (max-width: 400px) {
+    .circleimg {
+        overflow: hidden;
+        top: 98vh;
+        /* left: 195px; */
+        position: relative;
+        /* width: 150px; */
+        height: 544px;
+        left: 23vw;
+    }
+
+    .bgcircle {
+        border-radius: 50%;
+        width: 57.8125vw;
+        width: 185px;
+        position: relative;
+        /* top: 672px; */
+        top: 179px;
+        left: 179px;
+        /* left: 55.9375vw; */
+    }
+
+    #circle {
+        width: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 105.5vh;
+        /* top: 273px; */
+        /* left: 23vw; */
+    }
+
+    #circle text {
+        font-family: 'Anek Bangla', sans-serif;
+        font-size: 10.2px;
+    }
+
+    #circle svg {
+        position: relative;
+        width: 169.0625vw;
+        width: 540px;
+        left: 23vw;
+        /* top: 504px; */
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+    .circleimg {
+        overflow: hidden;
+        top: 81.5vh;
+        /* left: 195px; */
+        position: relative;
+        /* width: 150px; */
+        height: 544px;
+        left: 23vw;
+    }
+
+    .bgcircle {
+        border-radius: 50%;
+        width: 57.8125vw;
+        width: 185px;
+        position: relative;
+        /* top: 672px; */
+        top: 179px;
+        left: 179px;
+        /* left: 55.9375vw; */
+    }
+
+    #circle {
+        width: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 88.5vh;
+        /* top: 273px; */
+        /* left: 23vw; */
+    }
+
+    #circle text {
+        font-family: 'Anek Bangla', sans-serif;
+        font-size: 10.2px;
+    }
+
+    #circle svg {
+        position: relative;
+        width: 169.0625vw;
+        width: 540px;
+        left: 23vw;
+        /* top: 504px; */
+    }
+}
+
+
 
 /* first part */
 
@@ -802,13 +935,30 @@ li:nth-child(3) a {
     .images-first {
         display: flex;
         justify-content: space-evenly;
-        margin-top: -200px;
+        margin-top: -60vh;
         overflow: hidden;
     }
 
     .firstimgs {
-        height: 66.98224852071006vh;
+        /* height: 66.98224852071006vh; */
+        width: 36.25vw;
         padding: 10px;
+    }
+
+    .images-first img:nth-child(3) {
+        margin-top: 0;
+    }
+
+    .images-first img:nth-child(4) {
+        margin-top: 0;
+    }
+
+    .images-first img:nth-child(5) {
+        margin-top: 0;
+    }
+
+    .images-first img:nth-child(6) {
+        margin-top: 0;
     }
 
     .images-first img:nth-child(1) {
@@ -817,6 +967,55 @@ li:nth-child(3) a {
 
     .images-first img {
         margin: 0;
+    }
+
+    #first-part {
+        position: relative;
+        margin-top: 140vw;
+    }
+
+    .part-1 {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        top: -63vh;
+        align-items: center;
+        padding: 0px 4vw;
+    }
+
+    .bistetxt {
+        font-size: 12.5vw;
+        font-family: 'Anek Bangla', sans-serif;
+        z-index: 999;
+        font-weight: 500;
+    }
+
+    .ptext {
+        line-height: 242%;
+        font-size: 5vw;
+        font-weight: 200;
+        letter-spacing: 0.01em;
+        text-align: left;
+    }
+
+    .bgtext {
+        font-size: 75vw;
+        transform: rotate(90deg);
+        font-family: 'Anek Bangla', sans-serif;
+        opacity: 4%;
+        font-weight: 300;
+        z-index: -99;
+        white-space: nowrap;
+        position: relative;
+        left: -16.5625vw;
+    }
+
+}
+
+@media only screen and (min-width: 350px) and (max-width: 600px) {
+    #first-part {
+        position: relative;
+        margin-top: 192vw;
     }
 
 }
@@ -910,6 +1109,78 @@ li:nth-child(3) a {
 
 }
 
+@media only screen and (max-width: 600px) {
+    .bgimg-marketing {
+        z-index: -999;
+        position: absolute;
+        top: -209px;
+        width: auto;
+        height: 1063px;
+        left: -522px;
+        opacity: 0.8;
+        overflow-x: hidden;
+    }
+
+    .mkt1 {
+        padding: 0 4%;
+    }
+
+    .img1 {
+        display: none;
+    }
+
+    .mkt1 :nth-child(2) {
+        position: relative;
+        /* font-size: 100px; */
+        font-size: 12.5vw;
+        font-weight: 500;
+        font-family: 'Anek Bangla', sans-serif;
+        letter-spacing: -0.04em;
+        text-align: left;
+        /* left: 16.5%; */
+        top: -2.272727272727273vh;
+    }
+
+    .mkt1 :nth-child(3) {
+        position: relative;
+        font-size: 5vw;
+        font-weight: 500;
+        line-height: 200%;
+        /* padding-left: 30px; */
+        padding-left: 0.4166666666666667vw;
+        top: -5.681818181818182vh;
+    }
+
+    .img2 {
+        display: none;
+    }
+
+    .spimg {
+        display: block;
+        width: 89.0625vw;
+        position: relative;
+        left: 1%;
+    }
+
+    .mkt-2 {
+        padding: 0 4%;
+    }
+
+    .mkt-2 :nth-child(2) {
+        font-size: 5vw;
+        margin: auto;
+        padding-top: 5vw;
+    }
+
+    .mkt-2 :nth-child(3) {
+        font-size: 4.375vw;
+        margin: 8% 0 0 0;
+        font-weight: 200;
+    }
+
+
+}
+
 /* @media (min-aspect-ratio: 3840/1874) {
     .mkt1{
         padding: 19.545454545454547vh 5.972222222222222vw 14.545454545454545vh 8.333333333333334vw;
@@ -929,6 +1200,7 @@ li:nth-child(3) a {
     position: absolute;
     z-index: -999;
     width: 100%;
+    overflow-x: hidden;
 }
 
 .ct1 {
@@ -1003,6 +1275,79 @@ li:nth-child(3) a {
     }
 }
 
+@media only screen and (max-width: 600px) {
+    #consulting {
+        position: relative;
+        margin: 125px 0 0 0;
+        overflow: hidden;
+        padding-bottom: 150px;
+    }
+
+    .bgimg-consulting {
+        width: auto;
+        z-index: -999;
+        position: absolute;
+        top: -165px;
+        left: -685px;
+        opacity: 0.8;
+        overflow-x: hidden;
+    }
+
+    .cimg1 {
+        display: none;
+    }
+
+    .ct1 {
+        padding: 0% 4% 8.5% 4%;
+    }
+
+    .ct1 div:nth-child(2) {
+        position: relative;
+        /* font-size: 100px; */
+        font-size: 12.5vw;
+        font-weight: 500;
+        font-family: 'Anek Bangla', sans-serif;
+        letter-spacing: -0.04em;
+        text-align: left;
+        /* left: 16.5%; */
+        top: -20px;
+    }
+
+    .ct1 div:nth-child(3) {
+        text-align: left;
+        position: relative;
+        font-weight: 500;
+        line-height: 200%;
+        padding-left: 2%;
+        top: -35px;
+        font-size: 5vw;
+        font-weight: 400;
+    }
+
+    .ct2 {
+        /* padding: 0px 70px 0px 120px; */
+        padding: 0% 4% 0% 4%;
+    }
+
+    .cimg2 {
+        display: none;
+    }
+
+    .ct2 div:nth-child(2) {
+        font-size: 5vw;
+        font-weight: 400;
+    }
+
+    .ct2 div:nth-child(3) {
+        font-weight: 200;
+        line-height: 200%;
+        opacity: 0.9;
+        margin-top: 24px;
+        margin-top: 2%;
+    }
+
+}
+
 /* @media (min-aspect-ratio: 3840/1874) {} */
 
 /* coming soon */
@@ -1015,6 +1360,7 @@ li:nth-child(3) a {
     z-index: -999;
     width: 100%;
     position: absolute;
+    overflow-x: hidden;
 }
 
 .textcs {
@@ -1048,6 +1394,55 @@ li:nth-child(3) a {
 .textcs div:nth-child(3) {
     font-weight: 400;
     line-height: 200%;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #coming-soon {
+        position: relative;
+        margin-top: -60px;
+        overflow: hidden;
+    }
+
+    .bgfinal {
+        width: auto;
+        z-index: -999;
+        position: absolute;
+        top: -85px;
+        left: -556px;
+        opacity: 0.8;
+    }
+
+    .textcs {
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 38%;
+        padding-top: 27%;
+        padding: 0 4%;
+    }
+
+    .textcs div:nth-child(1) {
+        font-weight: 700;
+        font-size: 10vw;
+        line-height: 110%;
+        letter-spacing: 0.2em;
+    }
+
+    .textcs div:nth-child(2) {
+        font-weight: 600;
+        font-size: 2.8402366863905324vh;
+        line-height: 110%;
+        font-family: 'Anek Bangla', sans-serif;
+        padding: 10px 0px 30px 0px;
+    }
+
+    .textcs div:nth-child(3) {
+        font-weight: 200;
+        line-height: 200%;
+    }
+
 }
 
 /* about us */
@@ -1091,14 +1486,61 @@ li:nth-child(3) a {
     padding: 5% 23% 1% 0%;
 }
 
-.info-1 {
+/* .info-1 {
     width: 10%;
-}
+} */
 
 .google {
     color: rgb(197, 197, 197);
     font-family: 'Anek Bangla', sans-serif;
     font-weight: 100;
+}
+
+@media only screen and (max-width: 600px) {
+    .about {
+        font-size: 12.25vw;
+        text-align: center;
+        padding: 7%;
+        line-height: 130%;
+    }
+
+    #profile {
+        padding: 0 4% 30% 4%;
+    }
+
+    .info {
+        font-size: 7.5vw;
+    }
+
+    .info-sub-1 {
+        display: flex;
+        flex-direction: column;
+        font-weight: 400;
+        opacity: 0.7;
+        padding-bottom: 6.666666666666667vh;
+    }
+
+    .info-1 {
+        font-size: 5vw;
+        opacity: 0.7;
+        font-weight: 200;
+        line-height: 300%;
+
+    }
+
+    .info-2 {
+        font-size: 5vw;
+        font-weight: 200;
+    }
+
+    .google {
+        position: relative;
+        top: 5vw;
+    }
+
+    .info-sub-1 div {
+        padding: 0;
+    }
 }
 
 
@@ -1130,6 +1572,12 @@ li:nth-child(3) a {
     line-height: 3.5502958579881656vh;
 }
 
+@media only screen and (max-width: 600px) {
+    #mission {
+        display: none;
+    }
+}
+
 /* STANCE */
 
 #stance {
@@ -1139,8 +1587,14 @@ li:nth-child(3) a {
     margin: 10.227272727272727vh 0px 27.272727272727273vh 0px;
 }
 
-/* contact us  */
-/* text */
+@media only screen and (max-width: 600px) {
+    #stance {
+        display: none;
+    }
+}
+
+
+/* contact us form */
 
 .uptxt {
     position: relative;
@@ -1183,10 +1637,47 @@ li:nth-child(3) a {
     top: 45%;
 }
 
+@media only screen and (max-width: 600px) {
+    .contact {
+        font-size: 12.5vw;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .uptxt {
+        margin: 0;
+        padding: 0 4%;
+    }
+
+    .under-txt {
+        font-size: 4.375vw;
+        opacity: 0.7;
+        font-weight: 200;
+    }
+
+    .tel {
+        text-align: center;
+        font-size: 7.5vw;
+    }
+
+    .tel span {
+        position: relative;
+        text-align: left;
+        font-size: 4.0625vw;
+        top: 7.8125vw;
+        left: -20.3125vw;
+    }
+}
+
 /* form */
 
 .formbox {
     padding: 0px 8.4%;
+}
+
+.required {
+    color: red;
+    font-weight: 800;
 }
 
 label {
@@ -1228,8 +1719,55 @@ input[type=submit]:hover {
     background-color: #0e0e0e;
 }
 
+.checkbox{
+    width: 0.78125vw;
+    height: 0.78125vw;
+}
 
-/* contact and footer */
+
+@media only screen and (max-width: 600px) {
+    .formbox {
+        padding: 0 4%;
+    }
+
+    input[type=text],
+    select,
+    textarea {
+        font-size: 4.375vw;
+        background: transparent;
+        width: 100%;
+        padding: 3.4201183431952662vh;
+        border: 0.11363636363636363vh solid rgba(137, 137, 137, 0.3);
+        border-radius: 1px;
+        box-sizing: border-box;
+        /* margin: 15px 0px 55px 0px; */
+        margin: 6% 0 9% 0;
+        resize: none;
+        color: #FFF;
+    }
+
+    /* Style the submit button with a specific background color etc */
+
+    input[type=submit] {
+        font-size: 4.375vw;
+        background-color: #000000;
+        color: white;
+        /* padding: 60px 20px; */
+        padding: 10% 1%;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        margin: 20% 0%;
+    }
+
+    #message{
+        padding: 3.4201183431952662vh 3.4201183431952662vh 15.4201183431952662vh 3.4201183431952662vh;
+    }
+
+}
+
+
+/* contact button and footer */
 
 #contact {
     background-color: #E1E1E1;
@@ -1284,13 +1822,47 @@ h5 {
     font-size: 1.1111111111111112vw;
 }
 
-.brand img {
-    width: 5.694444444444445vw;
-}
-
 @media (min-aspect-ratio: 640/323) {
     .contact-btn {
         left: 24.479166666666668vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #contact {
+        height: 100vh;
+    }
+
+    #contact a {
+        text-decoration: none;
+    }
+
+    .background-txt {
+        display: none;
+    }
+
+    .contact-btn {
+        position: relative;
+        top: 164px;
+        top: 30vh;
+        left: 0;
+        text-align: center;
+    }
+
+    h5 {
+        font-size: 12.5vw;
+    }
+
+    .yes {
+        position: relative;
+        top: 40px;
+        left: 0px;
+        float: none;
+    }
+
+    .btn-under {
+        position: relative;
+        font-size: 5vw;
     }
 }
 
@@ -1303,8 +1875,15 @@ h5 {
     z-index: 999;
 }
 
+.brand img {
+    position: absolute;
+    width: 5.694444444444445vw;
+    margin: 2% 0 0 15%;
+}
 
 .stuff {
+    display: flex;
+    justify-content: flex-end;
     z-index: 999;
     /* padding: 0px 200px; */
     padding: 0% 11.5%;
@@ -1315,7 +1894,7 @@ h5 {
 .footerbtns {
     color: #FFF;
     font-family: 'Anek Bangla', sans-serif;
-    float: right;
+    /* float: right; */
     padding: 1.1363636363636365vh 0px 0px 5.555555555555555vw;
     font-size: 1.3888888888888888vw;
 }
@@ -1327,6 +1906,34 @@ h5 {
     display: flex;
     justify-content: flex-end;
     font-weight: 100;
-    /* margin-right: 16.5%; */
+    margin-right: 11%;
     padding-top: 2.272727272727273vh;
+}
+
+@media only screen and (max-width: 600px) {
+    #footer {
+        height: 32vh;
+        text-align: center;
+        padding: 0 8%;
+    }
+
+    #footer img {
+        margin: 20px 0px 0px 30px;
+        position: relative;
+        width: 66px;
+        float: left;
+    }
+
+    .stuff {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerbtns {
+        font-size: 5vw;
+    }
+}
+
+.spimg {
+    display: none;
 }

@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Contact</title>
     <link rel="icon" type="image/x-icon" href="image_files\favicon.ico">
@@ -10,43 +12,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="style.css">
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link
-        href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100;200;300;400;500;600;700&family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap"
-        rel="stylesheet"> -->
     <script src="https://kit.fontawesome.com/787bc2ac90.js" crossorigin="anonymous"></script>
-
-
-
 </head>
 
 <body>
+
+    <!-- preloader -->
+    <div class="loader_bg">
+        <div class="line">
+            <div class="milana"></div>
+        </div>
+        <div class="line">
+            <div class="milana"></div>
+        </div>
+    </div>
+
+    <!-- noise background -->
+
     <div class="bg"></div>
+
+    <!-- nav menu -->
+
     <header>
-        <div id="brand"><a href="/index.html"><img src="image_files\グループ 2 1.png" alt="BiSTE"></a></div>
+        <div id="brand"><a href="/index.html"><img src="image_files\logo-large.png" alt="BiSTE"></a></div>
         <nav>
             <ul>
                 <li><a href="aboutus.html">会社概要</a></li>
-                <li><p>事例紹介</p></li>
+                <li>
+                    <p>事例紹介</p>
+                </li>
                 <li><a href="contact.html">contact</a></li>
             </ul>
         </nav>
 
-        <!-- max and min height/width -->
 
         <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
             <ul class="mobile-menu">
-                <li><a href="aboutus.html">会社概要</a></li>
-                <li><a href="/products">Products</a></li>
-                <li><a href="contact.html">contact</a></li>
+                <li><a href="aboutus.html">about</a></li>
+                <li class="marginnashi"><a href="contact.html">contact</a></li>
+                <span class="menutxt">
+                    <p class="pchild"> 株式会社BiSTE</p>
+                    <p class="pchild-1">東京都世田谷区北沢２丁目１０−１５ 藤和下北沢ハイタウンＡ棟 304</p>
+                    <a class="pchild-2"
+                        href="https://www.google.com/maps?ll=35.663105,139.668181&z=17&t=m&hl=ja&gl=JP&mapclient=embed&q=%E8%97%A4%E5%92%8C%E4%B8%8B%E5%8C%97%E6%B2%A2%E3%83%8F%E3%82%A4%E3%82%BF%E3%82%A6%E3%83%B3%EF%BC%A1%E6%A3%9F+%E3%80%92155-0031+%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%96%E7%94%B0%E8%B0%B7%E5%8C%BA%E5%8C%97%E6%B2%A2%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%90%E2%88%92%EF%BC%91%EF%BC%95"><i
+                            class="fa-solid fa-location-dot"></i> Google
+                        Maps</a>
             </ul>
         </div>
+
     </header>
 
     <div class="uptxt">
@@ -59,37 +75,44 @@
     <div class="formbox">
         <form id="myForm" data-netlify="true">
 
-            <label for="name">名前</label>
+            <label for="name">*名前</label>
             <input type="text" id="name" name="firstname" placeholder="姓名" required>
 
-            <label for="company-name">会社名</label>
+            <label for="company-name"><span class="required">*</span>会社名</label>
             <input type="text" id="company" name="company-name" placeholder="株式会社BiSTE">
 
-            <label for="email">メールアドレス</label>
+            <label for="email"><span class="required">*</span>メールアドレス</label>
             <input type="text" id="email" name="email" placeholder="info@biste.co.jp" required>
 
-            <label for="phone">電話番号</label>
+            <label for="phone"><span class="required">*</span>電話番号</label>
             <input type="text" id="phone" name="phone" placeholder="000-1111-222" required>
 
-            <label for="subject">お問い合わせ内容</label>
+            <label for="subject"><span class="required">*</span>お問い合わせ内容</label>
             <textarea id="message" name="message" placeholder="ここにお問い合わせ内容を記入"></textarea>
 
             <input type="checkbox" class="checkbox" name="checkBox" value="accept" required>
             <label for="privacyPolicy">プライバシーポリシーに同意する</label>
 
-            <input class="submitbutton" type="submit" value="送信する">
+            <input class="submitbutton" type="submit" value="送信する" required>
 
         </form>
     </div>
     <section id="footer">
-      <div class="stuff">
-         <a href="index.html" class="brand"><img src="image_files\logo-large.png" alt=""></a>
-         <a href="aboutus.html" class="footerbtns">about</a>
-         <a href="contact.html" class="footerbtns">contact</a>
-         <p class="last">We are a digital marketing companyat Shimokitazawa.</p>
-      </div>
+        <a href="index.html" class="brand"><img src="image_files\logo-large.png" alt=""></a>
+        <div class="stuff">
+            <a href="aboutus.html" class="footerbtns">about</a>
+            <a href="contact.html" class="footerbtns">contact</a>
+        </div>
+        <p class="last">We are a digital marketing companyat Shimokitazawa.</p>
     </section>
+
     <script src="/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function () {
+            $('.loader_bg').fadeToggle();
+        }, 1500);
+    </script>
 
 </body>
 
