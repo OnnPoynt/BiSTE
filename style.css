@@ -1763,6 +1763,11 @@ input[type=submit]:hover {
     #message{
         padding: 3.4201183431952662vh 3.4201183431952662vh 15.4201183431952662vh 3.4201183431952662vh;
     }
+    
+    .checkbox{
+        width: auto;
+        height: auto;
+    }
 
 }
 
