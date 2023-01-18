@@ -856,6 +856,10 @@ li:nth-child(3) a {
     text-align: center;
 }
 
+.spimg {
+    display: none;
+}
+
 .bgtext {
     font-size: 27.77777777777778vw;
     font-family: 'Anek Bangla', sans-serif;
@@ -1937,8 +1941,4 @@ h5 {
     .footerbtns {
         font-size: 5vw;
     }
-}
-
-.spimg {
-    display: none;
 }
