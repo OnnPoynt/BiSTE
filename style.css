@@ -1941,4 +1941,8 @@ h5 {
     .footerbtns {
         font-size: 5vw;
     }
+
+    .last{
+        margin: 0;
+    }
 }
