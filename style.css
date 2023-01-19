@@ -41,7 +41,8 @@ body {
     animation-iteration-count: infinite;
     position: absolute;
     top: 50%;
-    /* transform: rotate(-30deg); */
+    left: -10%;
+    transform: rotate(-15deg);
 }
 
 .milana {
@@ -53,6 +54,7 @@ body {
     animation-duration: 1.8s;
     animation-timing-function: ease-in;
     animation-iteration-count: infinite;
+    /* transform: rotate(-30deg); */
 }
 
 @keyframes line {
@@ -62,7 +64,7 @@ body {
 
     20%,
     100% {
-        width: 100%;
+        width: 120%;
     }
 }
 
@@ -70,24 +72,14 @@ body {
 
     0%,
     50% {
-        width: 0px;
+        width: 0%;
     }
 
 
     100% {
-        width: 100%;
+        width: 120%;
     }
 }
-
-/* @media only screen and (max-width: 600px) {
-    .line {
-        top: 30%;
-    }
-} */
-
-/* .info-1 {
-    width: 5.9171597633136095vh;
-} */
 
 /* background effects */
 
