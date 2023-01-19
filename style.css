@@ -299,7 +299,7 @@ li:nth-child(3) a {
     font-size: 4.375vw;
     line-height: 170%;
     position: absolute;
-    bottom: 5%;
+    bottom: 8%;
     margin: 0px;
     padding: 5%;
 }
@@ -634,219 +634,117 @@ li:nth-child(3) a {
 
 /* circle effects */
 
-.bgcircle {
-    border-radius: 50%;
-    background-size: cover;
-    left: 20%;
-    top: 84.6590909090909vh;
-    top: 87%;
-    overflow: hidden;
-    position: absolute;
-    /* width: 21.875vw; */
-    width: 16%;
-}
-
-#circle {
-    width: 100%;
-    overflow: hidden;
-}
-
-#circle text {
+.circle {
     font-family: 'Anek Bangla', sans-serif;
-    font-size: 7.65px;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    width: 20.833333333333332vw;
+    height: 20.833333333333332vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 44vw;
+    left: 18vw;
 }
 
-#circle svg {
+.logo {
     position: absolute;
-    /* width: 61.388888888888886vw; */
-    width: 46%;
-    /* left: 6.597222222222222vw; */
-    left: 4.9%;
-    /* top: 74.43181818181819vh; */
-    top: 60.6%;
-
-    -webkit-animation-name: rotate;
-
-    animation-name: rotate;
-
-    animation-duration: 10s;
-
-    -o-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-
-    animation-timing-function: linear;
+    width: 15.625vw;
+    height: 15.625vw;
+    background-image: url(https://github.com/OnnPoynt/BiSTE/blob/main/image_files/gradiation_sample_biste.png?raw=true);
+    background-size: cover;
+    border-radius: 50%;
 }
 
-@keyframes rotate {
-    from {
+.text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: textAnimation 10s linear infinite;
+}
+
+@keyframes textAnimation
+ {
+    0% {
         transform: rotate(0deg);
     }
 
-    to {
+    100% {
         transform: rotate(360deg);
-
     }
 }
 
-@media (min-aspect-ratio: 18/11) {
-    .bgcircle {
-        top: 84.6590909090909vh;
-    }
-
+.text span {
+    position: absolute;
+    left: 50%;
+    font-size: 1.2em;
+    transform-origin: 0 10.416666666666666vw;
 }
 
 @media (min-aspect-ratio: 640/323) {
-    .bgcircle {
-        left: 18%;
-        top: 85.5%;
+    .circle{
+        top: 37vw;
+        left: 15vw;    
+    }
+}
+@media only screen and (min-width: 300px) and (max-width: 350px) {
+    .circle{
+        width: 280px;
+        height: 280px;
+        top: 193vw;
+        left: 41vw;
+        margin-bottom: 242vw;    
     }
 
-    #circle svg {
-        left: 3%;
-        top: 56%;
+    .logo{
+        width: 180px;
+        height: 180px;
+    }
+
+    .text span{
+        transform-origin: 0 140px;
     }
 }
 
-@media (min-aspect-ratio: 3840/1874) {
-    #circle svg {
-        top: 55%;
-    }
-}
-
-@media only screen and (max-width: 350px) {
-    .circleimg {
-        overflow: hidden;
-        top: 79.5vh;
-        /* left: 195px; */
-        position: relative;
-        /* width: 150px; */
-        height: 544px;
+@media only screen and (min-width: 350px) and (max-width: 600px) {
+    .circle{
+        width: 280px;
+        height: 280px;
+        top: 200vw;
+        left: 46vw;
+        margin-bottom: 242vw;    
     }
 
-    .bgcircle {
-        border-radius: 50%;
-        width: 57.8125vw;
-        width: 185px;
-        position: relative;
-        /* top: 672px; */
-        top: 179px;
-        left: 179px;
-        /* left: 55.9375vw; */
+    .logo{
+        width: 180px;
+        height: 180px;
     }
 
-    #circle {
-        width: 100%;
-        overflow: hidden;
-        position: absolute;
-        top: 86.5vh;
-        /* top: 273px; */
-    }
-
-    #circle text {
-        font-family: 'Anek Bangla', sans-serif;
-        font-size: 10.2px;
-    }
-
-    #circle svg {
-        position: relative;
-        width: 169.0625vw;
-        width: 540px;
-        left: 0px;
-        /* top: 504px; */
-    }
-}
-
-@media only screen and (min-width: 350px) and (max-width: 400px) {
-    .circleimg {
-        overflow: hidden;
-        top: 98vh;
-        /* left: 195px; */
-        position: relative;
-        /* width: 150px; */
-        height: 544px;
-        left: 23vw;
-    }
-
-    .bgcircle {
-        border-radius: 50%;
-        width: 57.8125vw;
-        width: 185px;
-        position: relative;
-        /* top: 672px; */
-        top: 179px;
-        left: 179px;
-        /* left: 55.9375vw; */
-    }
-
-    #circle {
-        width: 100%;
-        overflow: hidden;
-        position: absolute;
-        top: 105.5vh;
-        /* top: 273px; */
-        /* left: 23vw; */
-    }
-
-    #circle text {
-        font-family: 'Anek Bangla', sans-serif;
-        font-size: 10.2px;
-    }
-
-    #circle svg {
-        position: relative;
-        width: 169.0625vw;
-        width: 540px;
-        left: 23vw;
-        /* top: 504px; */
+    .text span{
+        transform-origin: 0 140px;
     }
 }
 
 @media only screen and (min-width: 400px) and (max-width: 600px) {
-    .circleimg {
-        overflow: hidden;
-        top: 81.5vh;
-        /* left: 195px; */
-        position: relative;
-        /* width: 150px; */
-        height: 544px;
-        left: 23vw;
+    .circle{
+        width: 300px;
+        height: 300px;
+        top: 200vw;
+        left: 46vw;
+        margin-bottom: 242vw;    
     }
 
-    .bgcircle {
-        border-radius: 50%;
-        width: 57.8125vw;
-        width: 185px;
-        position: relative;
-        /* top: 672px; */
-        top: 179px;
-        left: 179px;
-        /* left: 55.9375vw; */
+    .logo{
+        width: 200px;
+        height: 200px;
     }
 
-    #circle {
-        width: 100%;
-        overflow: hidden;
-        position: absolute;
-        top: 88.5vh;
-        /* top: 273px; */
-        /* left: 23vw; */
-    }
-
-    #circle text {
-        font-family: 'Anek Bangla', sans-serif;
-        font-size: 10.2px;
-    }
-
-    #circle svg {
-        position: relative;
-        width: 169.0625vw;
-        width: 540px;
-        left: 23vw;
-        /* top: 504px; */
+    .text span{
+        transform-origin: 0 150px;
     }
 }
-
-
 
 /* first part */
 
@@ -854,6 +752,10 @@ li:nth-child(3) a {
     position: relative;
     margin-top: 86.36363636363636vh;
     text-align: center;
+}
+
+.spimg {
+    display: none;
 }
 
 .bgtext {
@@ -1937,8 +1839,8 @@ h5 {
     .footerbtns {
         font-size: 5vw;
     }
-}
 
-.spimg {
-    display: none;
+    .last{
+        margin: 0;
+    }
 }
