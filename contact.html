@@ -77,19 +77,19 @@
     <div class="formbox">
         <form id="myForm" data-netlify="true" action="thankyou.html" method="post">
 
-            <label for="name">名前</label>
+            <label for="name"><span class="required">*</span>名前</label>
             <input type="text" id="name" name="firstname" placeholder="姓名" required>
 
             <label for="company-name">会社名</label>
             <input type="text" id="company" name="company-name" placeholder="株式会社BiSTE">
 
-            <label for="email">メールアドレス</label>
+            <label for="email"><span class="required">*</span>メールアドレス</label>
             <input type="text" id="email" name="email" placeholder="info@biste.co.jp" required>
 
-            <label for="phone">電話番号</label>
+            <label for="phone"><span class="required">*</span>電話番号</label>
             <input type="text" id="phone" name="phone" placeholder="000-1111-222" required>
 
-            <label for="subject">お問い合わせ内容</label>
+            <label for="subject"><span class="required">*</span>お問い合わせ内容</label>
             <textarea id="message" name="message" placeholder="ここにお問い合わせ内容を記入"></textarea>
 
             <input type="checkbox" class="checkbox" name="checkBox" value="accept" required>
