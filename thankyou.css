@@ -1,9 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wdth,wght@75,200;100,200;125,200;125,300;125,400;125,500&family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap');
+
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Noto Sans JP', sans-serif;
     background-color: #111111;
     margin: 0;
     overflow-x: hidden;
+    font-size: 1.1111111111111112vw;
     color: #FFF;
+    font-stretch: expanded;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 4.375vw;
+        color: #FFF;
+    }
+}
+
+/* preloader */
+
+.loader_bg {
+    position: fixed;
+    z-index: 999999;
+    background: #151515;
+    width: 100%;
+    height: 100%;
+}
+
+.line {
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    animation-name: line;
+    animation-duration: 1.8s;
+    /* animation-timing-function: cubic-bezier(0.5, 0.25, 0.9, 0.45); */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: rotate(-15deg);
+}
+
+.milana {
+    height: 2px;
+    width: 0;
+    background-color: #000;
+    margin: 0 auto;
+    animation-name: milana;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    /* transform: rotate(-30deg); */
+}
+
+@keyframes line {
+    0% {
+        width: 0;
+    }
+
+    20%,
+    100% {
+        width: 120%;
+    }
+}
+
+@keyframes milana {
+
+    0%,
+    50% {
+        width: 0%;
+    }
+
+
+    100% {
+        width: 120%;
+    }
 }
 
 /* background effects */
@@ -16,12 +92,13 @@ body {
     bottom: -50%;
     width: 200%;
     height: 200vh;
-    background: transparent url("https://github.com/OnnPoynt/BiSTE/blob/main/image_files/145-100-40-monochrome.png?raw=true") repeat 0 0;
+    background: transparent url("https://github.com/OnnPoynt/BiSTE/blob/main/image_files/100-90-10-monochrome.png?raw=true") repeat 0 0;
     background-repeat: repeat;
     animation: bg-animation .2s infinite;
     opacity: .8;
     visibility: visible;
     z-index: -999;
+    overflow: hidden;
 }
 
 @keyframes bg-animation {
@@ -78,6 +155,7 @@ header a {
 
 header {
     padding: 10px 0px 10px 6px;
+    padding: 0.7% 0% 0.7% 0.5%;
     height: 5.9171597633136095vh;
     display: flex;
     justify-content: space-between;
@@ -85,10 +163,14 @@ header {
     align-items: center;
 }
 
+#brand img {
+    width: 4.583333333333333vw;
+}
+
 #brand {
     font-weight: bold;
-    font-size: 18px;
     display: flex;
+    width: 4.583333333333333vw;
 }
 
 #brand a {
@@ -109,19 +191,27 @@ ul a {
 }
 
 ul li {
-    padding: 18px 85px;
-    margin-left: 10px;
+    padding: 2.159090909090909vh 4.375vw 2.159090909090909vh 1.3194444444444444vw;
+    margin-left: 0.6944444444444444vw;
+    font-size: 1.1111111111111112vw;
 }
 
-ul li:hover {
+li:nth-child(2) {
+    padding-right: 5.902777777777778vw;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: line-through;
+}
+
+/* ul li:hover {
     transform: scale(1.1);
     transition: 0.3s;
-}
+} */
 
 li:nth-child(3) {
     background-image: url(https://github.com/OnnPoynt/BiSTE/blob/main/image_files/gradiation_sample_biste.png?raw=true);
     background-size: cover;
     overflow: hidden;
+    padding: 1.3888888888888888vw 8.181818181818182vh 1.1805555555555556vw 8.181818181818182vh;
 }
 
 li:nth-child(3) a {
@@ -129,7 +219,7 @@ li:nth-child(3) a {
     font-weight: 500;
     font-family: 'Anek Bangla', sans-serif;
     letter-spacing: 0.04em;
-    font-size: 18px;
+    font-size: 2.1301775147928996vh;
 }
 
 #hamburger-icon {
@@ -165,6 +255,10 @@ li:nth-child(3) a {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+    background-color: #151515;
+    z-index: 999;
 }
 
 .mobile-menu {
@@ -174,10 +268,51 @@ li:nth-child(3) a {
     left: 0;
     height: calc(100vh - 5.9171597633136095vh);
     width: 100%;
+    background-color: #151515;
 }
 
 .mobile-menu li {
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
+    padding: 0;
+    font-size: 10vw;
+    text-decoration: none;
+    z-index: 999;
+    font-stretch: expanded;
+    font-family: 'Anek Bangla', sans-serif;
+    text-decoration: underline 0.5px;
+    margin-top: 16.666666666666668vh;
+}
+
+.mobile-menu .marginnashi {
+    margin: 0;
+}
+
+.menutxt {
+    border-top: 0.5px solid rgb(94, 94, 94);
+    font-size: 4.375vw;
+    line-height: 170%;
+    position: absolute;
+    bottom: 8%;
+    margin: 0px;
+    padding: 5%;
+}
+
+.pchild {
+    margin-top: 0;
+}
+
+.pchild-1 {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 100;
+    opacity: 0.8;
+}
+
+.pchild-2 {
+    font-family: 'Anek Bangla', sans-serif;
+    opacity: 0.5;
+    text-decoration: underline;
+    font-weight: 100;
+    font-stretch: expanded;
 }
 
 @media only screen and (max-width: 600px) {
@@ -188,24 +323,34 @@ li:nth-child(3) a {
     #hamburger-icon {
         display: block;
     }
+
+    .bg {
+        height: 390vh;
+    }
 }
 
-a:link {
-    text-decoration: none;
+@media (min-aspect-ratio: 640/323) {
+    li:nth-child(3) {
+        padding: 1.3888888888888888vw 8.181818181818182vh 1vw 8.181818181818182vh;
+    }
 }
 
-a:visited {
-    text-decoration: none;
-}
+@media only screen and (max-width: 600px) {
 
-a:hover {
-    text-decoration: underline;
-}
+    header {
+        padding: 1% 4%;
+        border: none;
+    }
 
-a:active {
-    text-decoration: underline;
-}
+    #brand {
+        width: 15.625vw;
+    }
 
+    #brand img {
+        width: 15.625vw;
+    }
+
+}
 
 #thankyou {
     display: flex;
@@ -216,8 +361,7 @@ a:active {
 
 .up1 {
     font-weight: 300;
-    font-size: 120px;
-    transform: scale(1, 0.7);
+    font-size: 8.333333333333334vw;
     font-family: 'Anek Bangla', sans-serif;
     margin-top: 100px;
 }
@@ -231,17 +375,55 @@ a:active {
 .tel {
     position: relative;
     font-family: 'Anek Bangla', sans-serif;
-    font-size: 32px;
+    font-size: 2.2222222222222223vw;
+    font-weight: 300;
+    font-stretch: normal;
     letter-spacing: 0.05em;
+    margin-bottom: 11.363636363636363vh;
 }
 
 .tel span {
-    position: absolute;
-    font-size: 14px;
+    position: relative;
+    font-size: 0.9722222222222222vw;
     font-weight: 200;
+    font-stretch: normal;
+    line-height: 100%;
     color: rgb(210, 210, 210);
-    left: 43%;
-    top: 40%;
+    opacity: 0.5;
+    top: 45%;
+    left: -6%;
+    top: 2vw;
+}
+
+@media only screen and (max-width: 600px) {
+    .up1{
+        font-size: 12.5vw;
+        font-weight: 500;
+        padding: 0 20%;
+        line-height: 100%;
+    }
+
+    br{
+        display: none;
+    }
+    .up2{
+        padding: 4%;
+    }
+
+    .tel{
+        text-align: center;
+        font-size: 7.5vw;
+    }
+
+    .tel span {
+        position: relative;
+        text-align: left;
+        font-size: 4.0625vw;
+        top: -8.1875vw;
+        left: 8.6875vw;
+    
+    }
+
 }
 
 #footer {
@@ -255,8 +437,10 @@ a:active {
     display: flex;
     z-index: 999;
     padding: 0px 200px;
+    padding: 0px 13vw;
     font-weight: 400;
     margin-top: 30px;
+    margin-top: 3vw;
 }
 
 .footerbtns {
@@ -265,28 +449,89 @@ a:active {
     float: right;
     padding: 10px 30px 0px 30px;
     font-size: 20px;
+    font-size: 1.3888888888888888vw;
 }
 
 .last {
+    font-size: 1.25vw;
     color: #151515;
     font-family: 'Anek Bangla', sans-serif;
     z-index: 999;
     font-weight: 350;
-    transform: scale(1.35, 1);
     padding-left: 300px;
+    padding-left: 20vw;
     opacity: 0.3;
 }
 
-button{
+.topbutton{
     background-color: #000000;
-    padding: 72px;
-    width: 1200px;
-    margin: 201px 0px 240px 0px;
+    padding: 4.3888888888888888vw;
+    width: 80%;
+    margin: 9vw 0;
+    border: none;
 }
-
 .topbutton a{
     text-decoration: none;
     color: #FFF;
-    font-size: 24px;
+    font-size: 1.6666666666666667vw;
     font-weight: 300;
+}
+
+.brand{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    #footer {
+        background-color: #151515;
+        /* padding: 130px 0px 50px 0px; */
+        padding: 15% 0% 6% 0%;
+        z-index: 999;
+        height: 32vh;
+        text-align: center;
+        padding: 0 8%;
+    }
+
+    .stuff {
+        display: flex;
+        z-index: 999;
+        padding: 0% 11.5%;
+        font-weight: 400;
+        margin-top: 3.409090909090909vh;
+        flex-direction: column;
+    }
+    
+    #footer img {
+        margin: 20px 0px 0px 30px;
+        position: relative;
+        width: 66px;
+        float: left;
+    }
+
+    .brand{
+        display: block;
+    }
+
+    .footerbtns {
+        color: #FFF;
+        font-family: 'Anek Bangla', sans-serif;
+        padding: 1.1363636363636365vh 0px 0px 5.555555555555555vw;
+        font-size: 1.3888888888888888vw;
+        font-size: 5vw;
+    }
+    
+    .last {
+        color: rgb(157, 157, 157);
+        font-family: 'Anek Bangla', sans-serif;
+        z-index: 999;
+        font-weight: 100;
+        margin: 0;
+        padding-top: 2.272727272727273vh;
+        font-size: 5vw;
+        padding: 7vw 0 0 0 ;
+    }
+
+    .topbutton a{
+        font-size: 5vw;
+    }
 }
