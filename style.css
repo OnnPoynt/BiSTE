@@ -37,7 +37,8 @@ body {
     background-color: #fff;
     animation-name: line;
     animation-duration: 1.8s;
-    animation-timing-function: cubic-bezier(0.5, 0.25, 0.9, 0.45);
+    /* animation-timing-function: cubic-bezier(0.5, 0.25, 0.9, 0.45); */
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
     position: absolute;
     top: 50%;
