@@ -37,11 +37,13 @@ body {
     background-color: #fff;
     animation-name: line;
     animation-duration: 1.8s;
-    animation-timing-function: cubic-bezier(0.5, 0.25, 0.9, 0.45);
+    /* animation-timing-function: cubic-bezier(0.5, 0.25, 0.9, 0.45); */
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
     position: absolute;
     top: 50%;
-    /* transform: rotate(-30deg); */
+    left: -10%;
+    transform: rotate(-15deg);
 }
 
 .milana {
@@ -53,6 +55,7 @@ body {
     animation-duration: 1.8s;
     animation-timing-function: ease-in;
     animation-iteration-count: infinite;
+    /* transform: rotate(-30deg); */
 }
 
 @keyframes line {
@@ -62,7 +65,7 @@ body {
 
     20%,
     100% {
-        width: 100%;
+        width: 120%;
     }
 }
 
@@ -70,24 +73,14 @@ body {
 
     0%,
     50% {
-        width: 0px;
+        width: 0%;
     }
 
 
     100% {
-        width: 100%;
+        width: 120%;
     }
 }
-
-/* @media only screen and (max-width: 600px) {
-    .line {
-        top: 30%;
-    }
-} */
-
-/* .info-1 {
-    width: 5.9171597633136095vh;
-} */
 
 /* background effects */
 
@@ -408,11 +401,11 @@ li:nth-child(3) a {
     color: rgba(255, 255, 255, 0.5);
 }
 
-.vla{
+.vla {
     display: none;
 }
 
-.vlc{
+.vlc {
     display: none;
 }
 
@@ -471,7 +464,7 @@ li:nth-child(3) a {
     line-height: 100%;
     right: 3.0555555555555554vw;
     top: 42%;
-    top: 364px;
+    /* top: 364px; */
     margin: 0px;
     position: absolute;
     font-family: 'Anek Bangla', sans-serif;
@@ -665,8 +658,7 @@ li:nth-child(3) a {
     animation: textAnimation 10s linear infinite;
 }
 
-@keyframes textAnimation
- {
+@keyframes textAnimation {
     0% {
         transform: rotate(0deg);
     }
@@ -684,64 +676,65 @@ li:nth-child(3) a {
 }
 
 @media (min-aspect-ratio: 640/323) {
-    .circle{
+    .circle {
         top: 37vw;
-        left: 15vw;    
+        left: 15vw;
     }
 }
+
 @media only screen and (min-width: 300px) and (max-width: 350px) {
-    .circle{
+    .circle {
         width: 280px;
         height: 280px;
         top: 193vw;
         left: 41vw;
-        margin-bottom: 242vw;    
+        margin-bottom: 242vw;
     }
 
-    .logo{
+    .logo {
         width: 180px;
         height: 180px;
     }
 
-    .text span{
+    .text span {
         transform-origin: 0 140px;
     }
 }
 
 @media only screen and (min-width: 350px) and (max-width: 600px) {
-    .circle{
+    .circle {
         width: 280px;
         height: 280px;
         top: 200vw;
         left: 46vw;
-        margin-bottom: 242vw;    
+        margin-bottom: 242vw;
     }
 
-    .logo{
+    .logo {
         width: 180px;
         height: 180px;
     }
 
-    .text span{
+    .text span {
         transform-origin: 0 140px;
     }
 }
 
 @media only screen and (min-width: 400px) and (max-width: 600px) {
-    .circle{
+    .circle {
         width: 300px;
         height: 300px;
         top: 200vw;
         left: 46vw;
-        margin-bottom: 242vw;    
+        margin-bottom: 242vw;
     }
 
-    .logo{
+    .logo {
         width: 200px;
         height: 200px;
     }
 
-    .text span{
+    .text span {
         transform-origin: 0 150px;
     }
 }
@@ -1621,7 +1614,7 @@ input[type=submit]:hover {
     background-color: #0e0e0e;
 }
 
-.checkbox{
+.checkbox {
     width: 0.78125vw;
     height: 0.78125vw;
 }
@@ -1662,11 +1655,11 @@ input[type=submit]:hover {
         margin: 20% 0%;
     }
 
-    #message{
+    #message {
         padding: 3.4201183431952662vh 3.4201183431952662vh 15.4201183431952662vh 3.4201183431952662vh;
     }
-    
-    .checkbox{
+
+    .checkbox {
         width: auto;
         height: auto;
     }
@@ -1717,6 +1710,13 @@ h5 {
     left: 115%;
     height: 75%;
     top: 20%;
+    border-radius: 50%;
+    border: solid black 2px;
+    top: 20%;
+}
+
+.yesmain {
+    display: none;
 }
 
 .btn-under {
@@ -1729,9 +1729,46 @@ h5 {
     font-size: 1.1111111111111112vw;
 }
 
+.arrow {
+    position: absolute;
+    left: 879px;
+    top: 290px;
+    padding: 2.6041666666666665vw;
+    left: 60.9vw;
+    top: 18.7vw;
+    color: #000000;
+    margin: 1em 0;
+    z-index: 99999;
+}
+
+.arrow::after {
+    font-family: 'Courier New', Courier, monospace;
+    display: inline-block;
+    font-size: 5.555555555555555vw;
+    font-weight: 100;
+    /* padding-left: 8px; */
+    content: "→";
+    transition: transform 0.3s ease-out;
+}
+
+.arrow:hover {
+    color: #000000;
+}
+
+.arrow:hover::after {
+    transform: translateX(28%);
+}
+
 @media (min-aspect-ratio: 640/323) {
     .contact-btn {
         left: 24.479166666666668vw;
+    }
+}
+
+@media (max-aspect-ratio: 18/11) {
+    .arrow {
+        top: 18.5vw;
+        left: 60vw;
     }
 }
 
@@ -1765,11 +1802,25 @@ h5 {
         top: 40px;
         left: 0px;
         float: none;
+        width: 45vw;
+        display: none;
     }
 
     .btn-under {
         position: relative;
         font-size: 5vw;
+    }
+
+    .yesmain {
+        position: relative;
+        display: inline;
+        top: 40px;
+        left: 0px;
+        float: none;
+    }
+
+    .arrow::after {
+        display: none;
     }
 }
 
@@ -1799,11 +1850,31 @@ h5 {
 }
 
 .footerbtns {
+    position: relative;
     color: #FFF;
     font-family: 'Anek Bangla', sans-serif;
     /* float: right; */
-    padding: 1.1363636363636365vh 0px 0px 5.555555555555555vw;
+    margin: 1.1363636363636365vh 0px 0px 5.555555555555555vw;
     font-size: 1.3888888888888888vw;
+    text-decoration: none;
+}
+
+.stuff a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.stuff a:hover:after {
+    width: 100%;
+    left: 0;
 }
 
 .last {
@@ -1840,7 +1911,7 @@ h5 {
         font-size: 5vw;
     }
 
-    .last{
+    .last {
         margin: 0;
     }
 }
