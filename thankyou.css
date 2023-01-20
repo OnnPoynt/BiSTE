@@ -208,12 +208,52 @@ li:nth-child(3) {
     padding: 1.3888888888888888vw 8.181818181818182vh 1.1805555555555556vw 8.181818181818182vh;
 }
 
-li:nth-child(3) a {
+.header-buttons li:nth-child(3) {
+    background-image: url(https://github.com/OnnPoynt/BiSTE/blob/main/image_files/gradiation_sample_biste.png?raw=true);
+    background-size: cover;
+    overflow: hidden;
+    padding: 1.3888888888888888vw 8.181818181818182vh 1.1805555555555556vw 8.181818181818182vh;
+}
+
+.header-buttons li:nth-child(3) a {
     color: #111111;
     font-weight: 500;
     font-family: 'Anek Bangla', sans-serif;
     letter-spacing: 0.04em;
     font-size: 2.1301775147928996vh;
+}
+
+.header-buttons li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0;
+    position: relative;
+}
+
+.header-buttons li a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    top: 2vw;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.header-buttons li a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+@media screen and (max-height: 300px) {
+    ul {
+        margin-top: 40px;
+    }
 }
 
 #hamburger-icon {
@@ -390,21 +430,22 @@ li:nth-child(3) a {
 }
 
 @media only screen and (max-width: 600px) {
-    .up1{
+    .up1 {
         font-size: 12.5vw;
         font-weight: 500;
         padding: 0 20%;
         line-height: 100%;
     }
 
-    br{
+    br {
         display: none;
     }
-    .up2{
+
+    .up2 {
         padding: 4%;
     }
 
-    .tel{
+    .tel {
         text-align: center;
         font-size: 7.5vw;
     }
@@ -415,7 +456,7 @@ li:nth-child(3) a {
         font-size: 4.0625vw;
         top: -8.1875vw;
         left: 8.6875vw;
-    
+
     }
 
 }
@@ -441,9 +482,10 @@ li:nth-child(3) a {
     color: rgb(0, 0, 0);
     font-family: 'Anek Bangla', sans-serif;
     float: right;
-    padding: 10px 30px 0px 30px;
+    padding: 25px 30px 0px 30px;
     font-size: 20px;
     font-size: 1.3888888888888888vw;
+    text-decoration: none;
 }
 
 .last {
@@ -453,25 +495,28 @@ li:nth-child(3) a {
     z-index: 999;
     font-weight: 350;
     padding-left: 300px;
-    padding-left: 20vw;
+    padding-left: 39vw;
     opacity: 0.3;
+    top: -3.9vw;
+    position: relative;
 }
 
-.topbutton{
+.topbutton {
     background-color: #000000;
     padding: 4.3888888888888888vw;
     width: 80%;
     margin: 9vw 0;
     border: none;
 }
-.topbutton a{
+
+.topbutton a {
     text-decoration: none;
     color: #FFF;
     font-size: 1.6666666666666667vw;
     font-weight: 300;
 }
 
-.brand{
+.brand {
     display: none;
 }
 
@@ -494,7 +539,7 @@ li:nth-child(3) a {
         margin-top: 3.409090909090909vh;
         flex-direction: column;
     }
-    
+
     #footer img {
         margin: 20px 0px 0px 30px;
         position: relative;
@@ -502,7 +547,7 @@ li:nth-child(3) a {
         float: left;
     }
 
-    .brand{
+    .brand {
         display: block;
     }
 
@@ -513,7 +558,7 @@ li:nth-child(3) a {
         font-size: 1.3888888888888888vw;
         font-size: 5vw;
     }
-    
+
     .last {
         color: rgb(157, 157, 157);
         font-family: 'Anek Bangla', sans-serif;
@@ -522,10 +567,28 @@ li:nth-child(3) a {
         margin: 0;
         padding-top: 2.272727272727273vh;
         font-size: 5vw;
-        padding: 7vw 0 0 0 ;
+        padding: 7vw 0 0 0;
     }
 
-    .topbutton a{
+    .topbutton a {
         font-size: 5vw;
     }
+}
+
+.stuff a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: relative;
+    background: rgb(0, 0, 0);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.stuff a:hover:after {
+    width: 100%;
+    left: 0;
 }

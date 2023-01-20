@@ -196,25 +196,54 @@ li:nth-child(2) {
     text-decoration: line-through;
 }
 
-ul li:nth-child(1):hover,
-ul li:nth-child(3):hover {
-    text-decoration: underline;
-}
-
-li:nth-child(3) {
+.header-buttons li:nth-child(3) {
     background-image: url(https://github.com/OnnPoynt/BiSTE/blob/main/image_files/gradiation_sample_biste.png?raw=true);
     background-size: cover;
     overflow: hidden;
     padding: 1.3888888888888888vw 8.181818181818182vh 1.1805555555555556vw 8.181818181818182vh;
 }
 
-li:nth-child(3) a {
+.header-buttons li:nth-child(3) a {
     color: #111111;
     font-weight: 500;
     font-family: 'Anek Bangla', sans-serif;
     letter-spacing: 0.04em;
     font-size: 2.1301775147928996vh;
 }
+
+.header-buttons li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0;
+    position: relative;
+}
+
+.header-buttons li a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    top: 2vw;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.header-buttons li a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+@media screen and (max-height: 300px) {
+    ul {
+        margin-top: 40px;
+    }
+}
+
 
 #hamburger-icon {
     margin: auto 0;
@@ -1126,7 +1155,7 @@ li:nth-child(3) a {
 }
 
 .ct2 {
-    padding: 0px 3.4722222222222223vw 0px 8.055555555555555vw;
+    padding: 1vw 3.4722222222222223vw 0px 8.055555555555555vw;
     /* padding: 0% 3.5% 0% 7.5%; */
 }
 
@@ -1261,7 +1290,7 @@ li:nth-child(3) a {
     /* margin-bottom: 570px; */
     margin-bottom: 40%;
     padding-top: 27%;
-
+    width: 100%;
 }
 
 .textcs div:nth-child(1) {
