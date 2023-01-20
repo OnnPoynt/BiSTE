@@ -464,7 +464,7 @@ li:nth-child(3) a {
     line-height: 100%;
     right: 3.0555555555555554vw;
     top: 42%;
-    top: 364px;
+    /* top: 364px; */
     margin: 0px;
     position: absolute;
     font-family: 'Anek Bangla', sans-serif;
@@ -1715,7 +1715,7 @@ h5 {
     top: 20%;
 }
 
-.yesmain{
+.yesmain {
     display: none;
 }
 
@@ -1766,7 +1766,7 @@ h5 {
 }
 
 @media (max-aspect-ratio: 18/11) {
-    .arrow{
+    .arrow {
         top: 18.5vw;
         left: 60vw;
     }
@@ -1811,13 +1811,14 @@ h5 {
         font-size: 5vw;
     }
 
-    .yesmain{
+    .yesmain {
         position: relative;
         display: inline;
         top: 40px;
         left: 0px;
         float: none;
     }
+
     .arrow::after {
         display: none;
     }
@@ -1849,11 +1850,31 @@ h5 {
 }
 
 .footerbtns {
+    position: relative;
     color: #FFF;
     font-family: 'Anek Bangla', sans-serif;
     /* float: right; */
-    padding: 1.1363636363636365vh 0px 0px 5.555555555555555vw;
+    margin: 1.1363636363636365vh 0px 0px 5.555555555555555vw;
     font-size: 1.3888888888888888vw;
+    text-decoration: none;
+}
+
+.stuff a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.stuff a:hover:after {
+    width: 100%;
+    left: 0;
 }
 
 .last {
