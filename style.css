@@ -835,7 +835,7 @@ li:nth-child(2) {
     .circle {
         top: 45vw;
         left: 74vw;
-            width: 300px;
+        width: 300px;
         height: 300px;
     }
 
@@ -1241,7 +1241,7 @@ li:nth-child(2) {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0px 100px;
+        padding: 0px 12.195121951219512vw;
         top: -7vw;
         text-align: center;
     }
@@ -1434,6 +1434,60 @@ li:nth-child(2) {
 
 }
 
+@media screen and (min-width: 601px) and (max-width: 1279px) {
+
+    #consulting {
+        margin: 15vh 0;
+    }
+
+    .bgimg-consulting {
+        width: auto;
+    }
+
+    .cimg1 {
+        display: none;
+    }
+
+    .ct1 {
+        padding: 0;
+    }
+
+    .ct1 div:nth-child(2) {
+        font-size: 10.944444444444445vw;
+        text-align: center;
+    }
+
+    .ct1 div:nth-child(3) {
+        text-align: center;
+    }
+
+    .ct2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        padding: 0px 12.195121951219512vw;
+        text-align: center;
+
+    }
+
+    .cimg2 {
+        top: 0;
+        width: 50.513888888888886vw;
+    }
+
+    .ct2 div:nth-child(2) {
+        margin: 2vw 0 0 0;
+        font-size: 3.5vw;
+    }
+
+    .ct2 div:nth-child(3) {
+        margin: 3vw 0 0 0;
+    }
+}
+
+
 /* @media (min-aspect-ratio: 3840/1874) {} */
 
 /* coming soon */
@@ -1529,6 +1583,26 @@ li:nth-child(2) {
         line-height: 200%;
     }
 
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 1279px) {
+
+    .bgfinal {
+        position: absolute;
+        top: -9999px;
+        bottom: -9999px;
+        left: -9999px;
+        right: -9999px;
+        margin: auto;    
+        width: auto;
+    }
+
+    .textcs {
+        padding: 27% 100px;
+        width: auto;
+        text-align: center;
+    }
 }
 
 /* about us */
@@ -1632,6 +1706,25 @@ li:nth-child(2) {
     }
 }
 
+@media screen and (min-width: 601px) and (max-width: 1279px) {
+    .about {
+        font-size: 10vw;
+        margin-top: 10vh;
+    }
+
+    .info {
+        font-size: 3.2222222222222223vw;
+    }
+
+    .info-sub-1 {
+        font-size: 2vw;
+    }
+
+    .info-sub-1>div {
+        /* padding: 60px 300px 20px 0px; */
+        padding: 5% 14% 1% 0%;
+    }
+}
 
 /* mission */
 
@@ -1667,6 +1760,13 @@ li:nth-child(2) {
     }
 }
 
+@media screen and (min-width: 601px) and (max-width: 1279px) {
+    .mission-1 {
+        font-size: 4vh;
+    }
+
+}
+
 /* STANCE */
 
 #stance {
@@ -1682,6 +1782,11 @@ li:nth-child(2) {
     }
 }
 
+@media screen and (min-width: 601px) and (max-width: 1279px) {
+    #stance {
+        margin: 16.227272727272727vh 0px 27.272727272727273vh 0px;
+    }
+}
 
 /* contact us form */
 
@@ -1755,6 +1860,21 @@ li:nth-child(2) {
         font-size: 4.0625vw;
         top: 7.8125vw;
         left: -20.3125vw;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1279px) {
+    .contact {
+        font-size: 10vw;
+        margin-top: 10vh;
+    }
+
+    .under-txt {
+        font-size: 2vw;
+    }
+
+    .tel span {
+        font-size: 2vw;
     }
 }
 
@@ -1857,6 +1977,25 @@ input[type=submit]:hover {
         width: auto;
         height: auto;
     }
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 1279px) {
+    label {
+        font-size: 3vw;
+        font-weight: 300;
+    }
+
+    input[type=text],
+    select,
+    textarea {
+        margin: 4.5% 0 8.5% 0;
+    }
+
+    .checkbox {
+        width: 2vw;
+        height: 2vw;
+    }    
 
 }
 
@@ -2018,6 +2157,42 @@ h5 {
     }
 }
 
+@media screen and (min-width: 601px) and (max-width: 1279px) {
+    .yes {
+        display: none;
+    }
+
+    .yesmain {
+        position: relative;
+        display: inline;
+        top: -150px;
+        left: 395px;
+        float: none;
+    }
+
+    .arrow::after {
+        display: none;
+    }
+
+    .contact-btn {
+        left: 15.958333vw;
+    }
+
+    h5 {
+        font-size: 9.944444444444445vw;
+    }
+
+    .btn-under {
+        top: 40%;
+        font-size: 2.111111vw;
+    }
+
+    .background-txt {
+        font-size: 34.777778vw;
+    }
+
+}
+
 /* footer */
 
 #footer {
@@ -2107,5 +2282,17 @@ h5 {
 
     .last {
         margin: 0;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1279px) {
+
+    .brand img {
+        width: 13.694444444444443vw;
+        margin: 5% 0 0 15%;
+    }
+
+    .footerbtns {
+        font-size: 3vw;
     }
 }
