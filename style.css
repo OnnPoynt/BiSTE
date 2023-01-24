@@ -21,7 +21,7 @@ body {
     }
 }
 
-@media screen and (min-width: 601px) and (max-width:41020px) {
+@media screen and (min-width: 601px) and (max-width:1040px) {
     body {
         font-size: 2vw;
     }
@@ -343,7 +343,7 @@ li:nth-child(2) {
     }
 }
 
-@media screen and (min-width: 601px) and (max-width:41020px) {
+@media screen and (min-width: 601px) and (max-width:1040px) {
     #brand img {
         width: 10vw;
     }
@@ -490,7 +490,7 @@ li:nth-child(2) {
 
 }
 
-@media screen and (min-width: 601px) and (max-width:41020px) {
+@media screen and (min-width: 601px) and (max-width:1040px) {
     .vl {
         left: 11vw;
     }
@@ -560,7 +560,7 @@ li:nth-child(2) {
     }
 }
 
-@media screen and (min-width: 601px) and (max-width:41020px) {
+@media screen and (min-width: 601px) and (max-width:1040px) {
     .main-text {
         font-size: 8.944444vw;
     }
@@ -683,7 +683,7 @@ li:nth-child(2) {
     .pixels-1 {
         position: absolute;
         /* height: 640px; */
-        width: auto;
+        /* width: 34.72222222222222vw; */
         height: 76.61363636363636vh;
         /* width: 35%; */
         top: 0%;
@@ -827,7 +827,7 @@ li:nth-child(2) {
     }
 }
 
-@media screen and (min-width: 601px) and (max-width:41020px) {
+@media screen and (min-width: 601px) and (max-width:1040px) {
     .circle {
         top: 45vw;
         left: 74vw;
@@ -1019,7 +1019,7 @@ li:nth-child(2) {
 
 }
 
-@media screen and (min-width: 601px) and (max-width:41020px) {
+@media screen and (min-width: 601px) and (max-width:1040px) {
     #first-part {
         margin-top: 28.36363636363636vh;
     }
@@ -1212,7 +1212,7 @@ li:nth-child(2) {
     }
 }
 
-@media screen and (min-width: 601px) and (max-width:41020px) {
+@media screen and (min-width: 601px) and (max-width:1040px) {
 
     .bgimg-marketing {
         width: auto;
@@ -1430,7 +1430,7 @@ li:nth-child(2) {
 
 }
 
-@media screen and (min-width: 601px) and (max-width:41020px) {
+@media screen and (min-width: 601px) and (max-width:1040px) {
 
     #consulting {
         margin: 15vh 0;
@@ -1592,7 +1592,7 @@ li:nth-child(2) {
 }
 
 
-@media screen and (min-width: 601px) and (max-width:41020px) {
+@media screen and (min-width: 601px) and (max-width:1040px) {
 
     .bgfinal {
         position: absolute;
@@ -1712,7 +1712,7 @@ li:nth-child(2) {
     }
 }
 
-@media screen and (min-width: 601px) and (max-width:41020px) {
+@media screen and (min-width: 601px) and (max-width:1040px) {
     .about {
         font-size: 10vw;
         margin-top: 10vh;
@@ -1766,7 +1766,7 @@ li:nth-child(2) {
     }
 }
 
-@media screen and (min-width: 601px) and (max-width:41020px) {
+@media screen and (min-width: 601px) and (max-width:1040px) {
     .mission-1 {
         font-size: 4vh;
     }
@@ -1788,7 +1788,7 @@ li:nth-child(2) {
     }
 }
 
-@media screen and (min-width: 601px) and (max-width:41020px) {
+@media screen and (min-width: 601px) and (max-width:1040px) {
     #stance {
         margin: 16.227272727272727vh 0px 27.272727272727273vh 0px;
     }
@@ -1869,7 +1869,7 @@ li:nth-child(2) {
     }
 }
 
-@media screen and (min-width: 601px) and (max-width:41020px) {
+@media screen and (min-width: 601px) and (max-width:1040px) {
     .contact {
         font-size: 10vw;
         margin-top: 10vh;
@@ -1986,7 +1986,7 @@ input[type=submit]:hover {
 
 }
 
-@media screen and (min-width: 601px) and (max-width:41020px) {
+@media screen and (min-width: 601px) and (max-width:1040px) {
     label {
         font-size: 3vw;
         font-weight: 300;
@@ -2150,7 +2150,7 @@ h5 {
     }
 }
 
-@media screen and (min-width: 601px) and (max-width:41020px) {
+@media screen and (min-width: 601px) and (max-width:1040px) {
     .yes {
         display: none;
     }
@@ -2291,7 +2291,7 @@ h5 {
     }
 }
 
-@media screen and (min-width: 601px) and (max-width:41020px) {
+@media screen and (min-width: 601px) and (max-width:1040px) {
 
     .brand img {
         width: 13.694444444444443vw;
