@@ -39,7 +39,7 @@ body {
 
 .loader-line {
     width: 107vw;
-    height: 3px;
+    height: 1px;
     position: relative;
     overflow: hidden;
     background-color: rgb(0, 0, 0);
@@ -55,7 +55,7 @@ body {
 .loader-line:before {
     content: "";
     position: absolute;
-    height: 3px;
+    height: 1px;
     width: 10%;
     background-color: rgb(255, 255, 255);
     -webkit-animation: lineAnim 1s linear infinite;
@@ -383,7 +383,7 @@ li:nth-child(2) {
 
 @media (min-aspect-ratio: 640/323) {
     li:nth-child(3) {
-        padding: 1.3888888888888888vw 8.181818181818182vh 1vw 8.181818181818182vh;
+        padding: 1.3888888888888888vw 8.181818181818182vh 1vw 8.181818181818182vh !important;
     }
 }
 
@@ -724,8 +724,8 @@ li:nth-child(2) {
     position: relative;
     width: 400px;
     height: 400px;
-    width: 20.833333333333332vw;
-    height: 20.833333333333332vw;
+    width: 21.833333333333332vw;
+    height: 21.833333333333332vw;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -736,8 +736,8 @@ li:nth-child(2) {
 
 .logo {
     position: absolute;
-    width: 15.625vw;
-    height: 15.625vw;
+    width: 14.625vw;
+    height: 14.625vw;
     background-image: url(https://github.com/OnnPoynt/BiSTE/blob/main/image_files/gradiation_sample_biste.png?raw=true);
     background-size: cover;
     border-radius: 50%;
@@ -764,7 +764,7 @@ li:nth-child(2) {
     position: absolute;
     left: 50%;
     font-size: 1.2em;
-    transform-origin: 0 10.416666666666666vw;
+    transform-origin: 0 10.916666666666666vw;
 }
 
 
@@ -874,6 +874,9 @@ li:nth-child(2) {
     font-weight: 300;
     z-index: -99;
     padding-top: 10.227272727272727vh;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .part-1 {
@@ -1600,7 +1603,7 @@ li:nth-child(2) {
         bottom: -9999px;
         left: -9999px;
         right: -9999px;
-        margin: auto;    
+        margin: auto;
         width: auto;
     }
 
@@ -1858,6 +1861,8 @@ li:nth-child(2) {
     .tel {
         text-align: center;
         font-size: 7.5vw;
+        color: #FFF;
+        text-decoration: none;
     }
 
     .tel span {
@@ -1901,6 +1906,8 @@ label {
 }
 
 input[type=text],
+input[type=email],
+input[type=number],
 select,
 textarea {
     font-size: 1.893491124260355vh;
@@ -1914,6 +1921,10 @@ textarea {
     margin: 1.5% 0 4.5% 0;
     resize: none;
     color: #FFF;
+}
+
+#message{
+    resize: vertical;
 }
 
 /* Style the submit button with a specific background color etc */
@@ -1946,6 +1957,8 @@ input[type=submit]:hover {
     }
 
     input[type=text],
+    input[type=email],
+    input[type=number],
     select,
     textarea {
         font-size: 4.375vw;
@@ -1975,6 +1988,10 @@ input[type=submit]:hover {
         margin: 20% 0%;
     }
 
+    .submitbutton {
+        padding: 10% 1% !important;
+    }
+
     #message {
         padding: 3.4201183431952662vh 3.4201183431952662vh 15.4201183431952662vh 3.4201183431952662vh;
     }
@@ -2001,7 +2018,7 @@ input[type=submit]:hover {
     .checkbox {
         width: 2vw;
         height: 2vw;
-    }    
+    }
 
 }
 
@@ -2024,6 +2041,9 @@ input[type=submit]:hover {
     opacity: 4%;
     font-weight: 300;
     z-index: -99;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .contact-btn {

@@ -196,18 +196,6 @@ li:nth-child(2) {
     text-decoration: line-through;
 }
 
-/* ul li:hover {
-    transform: scale(1.1);
-    transition: 0.3s;
-} */
-
-li:nth-child(3) {
-    background-image: url(https://github.com/OnnPoynt/BiSTE/blob/main/image_files/gradiation_sample_biste.png?raw=true);
-    background-size: cover;
-    overflow: hidden;
-    padding: 1.3888888888888888vw 8.181818181818182vh 1.1805555555555556vw 8.181818181818182vh;
-}
-
 .header-buttons li:nth-child(3) {
     background-image: url(https://github.com/OnnPoynt/BiSTE/blob/main/image_files/gradiation_sample_biste.png?raw=true);
     background-size: cover;
@@ -256,6 +244,8 @@ li:nth-child(3) {
     }
 }
 
+/* mobile nav */
+
 #hamburger-icon {
     margin: auto 0;
     display: none;
@@ -263,25 +253,10 @@ li:nth-child(3) {
 }
 
 #hamburger-icon div {
-    width: 35px;
-    height: 3px;
-    background-color: white;
-    margin: 6px 0;
-    transition: 0.4s;
-}
-
-.open .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
-    transform: rotate(-45deg) translate(-6px, 6px);
-}
-
-.open .bar2 {
-    opacity: 0;
-}
-
-.open .bar3 {
-    -webkit-transform: rotate(45deg) translate(-6px, -8px);
-    transform: rotate(45deg) translate(-6px, -8px);
+    font-weight: 200;
+    font-family: 'Anek Bangla', sans-serif;
+    font-size: 4.375vw;
+    opacity: 0.8;
 }
 
 .open .mobile-menu {
@@ -306,7 +281,6 @@ li:nth-child(3) {
 }
 
 .mobile-menu li {
-    /* margin-bottom: 10px; */
     padding: 0;
     font-size: 10vw;
     text-decoration: none;
@@ -363,10 +337,25 @@ li:nth-child(3) {
     }
 }
 
-@media (min-aspect-ratio: 640/323) {
-    li:nth-child(3) {
-        padding: 1.3888888888888888vw 8.181818181818182vh 1vw 8.181818181818182vh;
+@media screen and (min-width: 601px) and (max-width:1040px) {
+    #brand img {
+        width: 10vw;
     }
+
+    ul {
+        display: flex;
+        align-items: center;
+    }
+
+    ul li {
+        font-size: 2.7vw;
+    }
+
+    .header-buttons li:nth-child(3) {
+        padding: 2vw 5.181818181818182vh 2vw 5.181818181818182vh;
+        /* font-size: 2.1111111111111112vw; */
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -384,6 +373,12 @@ li:nth-child(3) {
         width: 15.625vw;
     }
 
+}
+
+@media (min-aspect-ratio: 640/323) {
+    li:nth-child(3) {
+        padding: 1.3888888888888888vw 8.181818181818182vh 1vw 8.181818181818182vh !important;
+    }
 }
 
 #thankyou {
@@ -568,6 +563,22 @@ li:nth-child(3) {
         padding-top: 2.272727272727273vh;
         font-size: 5vw;
         padding: 7vw 0 0 0;
+    }
+
+    .up3{
+        padding: 0 4%;
+    }
+
+    .topbutton{
+        font-size: 4.375vw;
+        background-color: #000000;
+        color: white;
+        /* padding: 60px 20px; */
+        padding: 10% 1%;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        margin: 20% 0%;
     }
 
     .topbutton a {
