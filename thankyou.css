@@ -33,7 +33,7 @@ body {
 
 .loader-line {
     width: 107vw;
-    height: 3px;
+    height: 1px;
     position: relative;
     overflow: hidden;
     background-color: rgb(0, 0, 0);
@@ -49,7 +49,7 @@ body {
 .loader-line:before {
     content: "";
     position: absolute;
-    height: 3px;
+    height: 1px;
     width: 10%;
     background-color: rgb(255, 255, 255);
     -webkit-animation: lineAnim 1s linear infinite;
@@ -200,7 +200,8 @@ li:nth-child(2) {
     background-image: url(https://github.com/OnnPoynt/BiSTE/blob/main/image_files/gradiation_sample_biste.png?raw=true);
     background-size: cover;
     overflow: hidden;
-    padding: 1.3888888888888888vw 8.181818181818182vh 1.1805555555555556vw 8.181818181818182vh;
+    /* padding: 1.3888888888888888vw 8.181818181818182vh 1.1805555555555556vw 8.181818181818182vh; */
+    padding-left: 7.6vh;
 }
 
 .header-buttons li:nth-child(3) a {
@@ -260,6 +261,7 @@ li:nth-child(2) {
 }
 
 .open .mobile-menu {
+    position: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -446,17 +448,17 @@ li:nth-child(2) {
     }
 
     .tel span {
-        position: relative;
+        position: absolute;
         text-align: left;
         font-size: 4.0625vw;
-        top: -8.1875vw;
-        left: 8.6875vw;
-
+        top: -2.1875vw;
+        left: 21.6875vw;    
     }
 
 }
 
 #footer {
+    position: relative;
     margin-top: 30px;
     background-color: #E1E1E1;
     padding: 50px 0px 50px 0px;
@@ -487,7 +489,7 @@ li:nth-child(2) {
     font-size: 1.25vw;
     color: #151515;
     font-family: 'Anek Bangla', sans-serif;
-    z-index: 999;
+    z-index: -1;
     font-weight: 350;
     padding-left: 300px;
     padding-left: 39vw;

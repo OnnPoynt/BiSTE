@@ -154,6 +154,7 @@ header a {
 }
 
 header {
+    overflow: hidden;
     padding: 10px 0px 10px 6px;
     padding: 0.7% 0% 0.7% 0.5%;
     height: 5.9171597633136095vh;
@@ -206,7 +207,8 @@ li:nth-child(2) {
     background-image: url(https://github.com/OnnPoynt/BiSTE/blob/main/image_files/gradiation_sample_biste.png?raw=true);
     background-size: cover;
     overflow: hidden;
-    padding: 1.3888888888888888vw 8.181818181818182vh 1.1805555555555556vw 8.181818181818182vh;
+    /* padding: 1.3888888888888888vw 8.181818181818182vh 1.1805555555555556vw 8.181818181818182vh; */
+    padding-left: 7.6vh;
 }
 
 .header-buttons li:nth-child(3) a {
@@ -266,6 +268,7 @@ li:nth-child(2) {
 }
 
 .open .mobile-menu {
+    position: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -890,7 +893,7 @@ li:nth-child(2) {
     /* font-size: 100px; */
     font-size: 6.944444444444445vw;
     font-family: 'Anek Bangla', sans-serif;
-    z-index: 999;
+    /* z-index: 999; */
     font-weight: 500;
 }
 
@@ -988,7 +991,7 @@ li:nth-child(2) {
     .bistetxt {
         font-size: 12.5vw;
         font-family: 'Anek Bangla', sans-serif;
-        z-index: 999;
+        /* z-index: 999; */
         font-weight: 500;
     }
 
@@ -1085,7 +1088,7 @@ li:nth-child(2) {
 }
 
 .mkt1 {
-    padding: 14.545454545454545vh 5.972222222222222vw 14.545454545454545vh 8.333333333333334vw;
+    padding: 14.545454545454545vh 5.972222222222222vw 14.545454545454545vh 7.7vw;
     /* padding: 9% 5% 8.5% 6%; */
 }
 
@@ -1184,7 +1187,8 @@ li:nth-child(2) {
         line-height: 200%;
         /* padding-left: 30px; */
         padding-left: 0.4166666666666667vw;
-        top: -5.681818181818182vh;
+        top: -4.681818181818182vh;
+        margin-bottom: 3vw;
     }
 
     .img2 {
@@ -1765,7 +1769,18 @@ li:nth-child(2) {
 
 @media only screen and (max-width: 600px) {
     #mission {
-        display: none;
+        padding: 4%;
+        margin: 0;
+    }
+
+    .info-all{
+        padding: 0;
+        margin: 0;
+    }
+
+    .mission-1{
+        font-weight: 300;
+        font-size: 4.573964vh;
     }
 }
 
@@ -1779,7 +1794,6 @@ li:nth-child(2) {
 /* STANCE */
 
 #stance {
-    /* padding-left: 120px; */
     padding-left: 8.5%;
     text-align: left;
     margin: 16.227272727272727vh 0px 27.272727272727273vh 0px;
@@ -1787,7 +1801,8 @@ li:nth-child(2) {
 
 @media only screen and (max-width: 600px) {
     #stance {
-        display: none;
+        padding: 4%;
+        margin-top: 17vh;
     }
 }
 
@@ -1908,6 +1923,7 @@ label {
 input[type=text],
 input[type=email],
 input[type=number],
+input[type=tel],
 select,
 textarea {
     font-size: 1.893491124260355vh;
@@ -1959,6 +1975,7 @@ input[type=submit]:hover {
     input[type=text],
     input[type=email],
     input[type=number],
+    input[type=tel],
     select,
     textarea {
         font-size: 4.375vw;
