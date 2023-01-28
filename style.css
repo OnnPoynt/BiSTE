@@ -1842,6 +1842,7 @@ li:nth-child(2) {
     font-stretch: normal;
     letter-spacing: 0.05em;
     margin-bottom: 11.363636363636363vh;
+    text-decoration: none !important;
 }
 
 .tel span {
@@ -1955,6 +1956,7 @@ input[type=submit] {
     cursor: pointer;
     width: 100%;
     margin: 20% 0%;
+    -webkit-appearance: none;
 }
 
 input[type=submit]:hover {
