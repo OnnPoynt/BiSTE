@@ -1845,14 +1845,11 @@ li:nth-child(2) {
     text-decoration: none !important;
 }
 
-a[x-apple-data-detectors] .tel {
-    color: inherit !important;
-    text-decoration: none !important;
-    font-size: inherit !important;
-    font-family: inherit !important;
-    font-weight: inherit !important;
-    line-height: inherit !important;  
+a[href^="tel"]{
+    color:inherit;
+    text-decoration:none;
 }
+
 
 .tel span {
     position: absolute;
