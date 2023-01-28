@@ -1834,7 +1834,7 @@ li:nth-child(2) {
     letter-spacing: 0.05em;
 }
 
-.tel {
+a[x-apple-data-detectors] .tel {
     position: relative;
     font-family: 'Anek Bangla', sans-serif;
     font-size: 2.8402366863905324vh;
