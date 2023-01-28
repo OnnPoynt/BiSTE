@@ -1850,7 +1850,6 @@ a[href^="tel"]{
     text-decoration:none;
 }
 
-
 .tel span {
     position: absolute;
     font-size: 0.9722222222222222vw;
