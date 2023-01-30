@@ -41,7 +41,6 @@
             </ul>
         </nav>
 
-
         <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
             <div id="bar1">menu</div>
             <ul class="mobile-menu">
@@ -228,6 +227,12 @@
         setTimeout(function () {
             $('.loader_bg').fadeToggle();
         }, 1500);
+
+        const text = document.querySelector('.text o');
+        text.innerHTML = text.innerText.split("").map(
+            (char, i) =>
+                `<span style= "transform:rotate(${i * 6}deg)">${char}</span>`
+        ).join("")
     </script>
 
 </body>

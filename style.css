@@ -310,7 +310,7 @@ li:nth-child(2) {
     font-size: 4.375vw;
     line-height: 170%;
     position: absolute;
-    bottom: 8%;
+    bottom: 9%;
     margin: 0px;
     padding: 5%;
 }
@@ -947,7 +947,7 @@ li:nth-child(2) {
 
     .firstimgs {
         /* height: 66.98224852071006vh; */
-        width: 36.25vw;
+        width: 45.25vw;
         padding: 10px;
     }
 
@@ -1679,6 +1679,7 @@ li:nth-child(2) {
         text-align: center;
         padding: 7%;
         line-height: 130%;
+        font-weight: 500;
     }
 
     #profile {
@@ -2313,7 +2314,7 @@ h5 {
     #footer img {
         margin: 20px 0px 0px 30px;
         position: relative;
-        width: 66px;
+        width: 20.625vw;
         float: left;
     }
 
