@@ -612,14 +612,6 @@ li:nth-child(2) {
     right: 11.11111111111111vw;
 }
 
-.bars-3 {
-    display: none;
-}
-
-.bars-4 {
-    display: none;
-}
-
 @media only screen and (max-width: 600px) {
     .pixels-1 {
         width: 77.5vw;
@@ -629,14 +621,6 @@ li:nth-child(2) {
     }
 
     .bars-1 {
-        display: none;
-    }
-
-    .bars-2 {
-        display: none;
-    }
-
-    .bars-3 {
         display: block;
         position: absolute;
         /* height: 304px; */
@@ -645,7 +629,7 @@ li:nth-child(2) {
         left: 5vw;
     }
 
-    .bars-4 {
+    .bars-2 {
         display: block;
         position: absolute;
         /* height: 304px; */
