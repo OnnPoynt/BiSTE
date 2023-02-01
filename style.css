@@ -162,6 +162,7 @@ header {
     justify-content: space-between;
     border-bottom: 0.5px solid rgb(94, 94, 94);
     align-items: center;
+    touch-action: none;
 }
 
 #brand img {
